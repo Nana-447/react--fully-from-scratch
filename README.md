@@ -1,4 +1,4 @@
-<h1 align="center"><b>React Zero to Mastery</b></h1>
+<h1 align="center"><b>REACT ZERO TO MASTERY</b></h1>
 
 <p align="center">
   <img src="https://cdn.worldvectorlogo.com/logos/react.svg" width="250">
