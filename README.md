@@ -10,7 +10,7 @@ This project was developed with [React JS](https://reactjs.org/).
 
 ## How do I undestand your project, João? 
 #### It's simple: 
-#### 1 - Check out all the [installation guide]()
+#### 1 - Check out all the [installation guide](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/INSTALLATION%20GUIDE.md)
 
 ## Want to see some screenshots? 
 [Click here to check them out](https://github.com/jvlessa/React--Zero-To-Mastery/tree/master/screenshots)
