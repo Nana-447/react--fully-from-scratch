@@ -4,7 +4,8 @@
   <img src="https://cdn.worldvectorlogo.com/logos/react.svg" width="250">
 </p>
 
-Web responsive system developed in React using all the tecnologies it has. From Zero to Mastery is a repository dedicated for code since the basic until the full power of react framework. 
+Web responsive system developed in React using all the tecnologies that the framework has. 
+From Zero to Mastery is a repository dedicated for coding since the basic until the full power of react dom. 
 
 This project was developed with [React JS](https://reactjs.org/).
 
