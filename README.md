@@ -13,6 +13,7 @@ This project was developed with [React JS](https://reactjs.org/).
 #### It's simple: 
 #### 1 - Check out all the [installation guide](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/INSTALLATION%20GUIDE.md)
 #### 2 - [Create React App](https://reactjs.org/docs/create-a-new-react-app.html)
+#### 3 - Check this file out for [more info](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/INFO.md)
 
 ## Want to see some screenshots? 
 [Click here to check them out](https://github.com/jvlessa/React--Zero-To-Mastery/tree/master/screenshots)
