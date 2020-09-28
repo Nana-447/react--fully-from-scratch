@@ -7,18 +7,31 @@ class App extends Component {
     super(); // CALL THE CONSTRUCTOR METHOD ON THE COMPONENT AND GIVES US ACCESS TO THE STATE
 
     this.state = {
-      string: 'Hello Joao'
+      monsters: [
+        {
+          name: 'Frankenstein',
+          id: 'asc1'
+        },
+        {
+          name: 'Dracula',
+          id: 'asc2'
+        },
+        {
+          name: 'Zombie',
+          id: 'asc3'
+        }
+      ]
     };
   }
   
   render () {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>{ this.state.string }</p>
-          <button onClick = {() => this.setState({ string: "Hello Testing" })}>Change Text</button>
-        </header>
+        {
+          this.state.monsters.map(monster => (
+            <h1 key={monster.id}> {monster.name} </h1>
+          ))
+        }       
       </div>
     );    
   }

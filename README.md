@@ -18,6 +18,10 @@ This project was developed with [React JS](https://reactjs.org/).
 #### 2 - [Create a React App](https://reactjs.org/docs/create-a-new-react-app.html)
 #### 3 - Check this file out for [my technical notes](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/INFO.md)
 #### 4 - To develop a React App using [Classes, take a look here](https://reactjs.org/docs/react-component.html)
+#### 5 - Running "Monsters-Rolodex" App:
+  - Access the directory folder;
+  - Run `npm install`;
+  - Run `npm start`;
 
 ## Want to see some screenshots? 
 [Click here to check them out](https://github.com/jvlessa/React--Zero-To-Mastery/tree/master/screenshots)
