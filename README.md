@@ -14,7 +14,7 @@ This project was developed with [React JS](https://reactjs.org/).
 #### 1 - Check out all the [installation guide](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/INSTALLATION%20GUIDE.md)
 #### 2 - [Create React App](https://reactjs.org/docs/create-a-new-react-app.html)
 #### 3 - Check this file out for [more info](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/INFO.md)
-#### 4 - To develop a React App with Class, (take a look here](https://reactjs.org/docs/react-component.html)
+#### 4 - To develop a React App with Class, [take a look here](https://reactjs.org/docs/react-component.html)
 
 ## Want to see some screenshots? 
 [Click here to check them out](https://github.com/jvlessa/React--Zero-To-Mastery/tree/master/screenshots)
