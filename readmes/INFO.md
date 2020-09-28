@@ -1,4 +1,4 @@
-# MY OWN NOTES
+# MY OWN NOTES (for React and Other Things too)
 
 ## NPM VS. YARN commands
 - Install dependencies from package.json: npm install == yarn;
@@ -14,3 +14,8 @@
 
 ## WEBPACK
 - Module blunder to take all the JavaScript, put everything together and make it ready to build the code;
+
+## SET STATE
+- Always use "this.setState" to change a state value;
+- Never use "this.state.variable = "test";
+- The "setState" triggers and renders a new component automatically;
