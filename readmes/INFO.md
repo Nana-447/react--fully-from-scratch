@@ -19,3 +19,32 @@
 - Always use "this.setState" to change a state value;
 - Never use "this.state.variable = "test";
 - The "setState" triggers and renders a new component automatically;
+
+## WAYS OF CREATING COMPONENTS IN REACT
+### USING CLASSES:
+``class App extends Component {
+  constructor(){
+    super();
+
+    this.state = {
+      monsters: []
+    };
+  }
+
+  render () {
+    return (
+        <input 
+            className="search-box"
+            type="search"
+        />
+    );    
+  }
+}``
+
+### USING ARROW FUNCTIONS:
+``export const SearchBox = props => (
+    <input 
+        className="search-box"
+        type="search"
+    />
+);``
