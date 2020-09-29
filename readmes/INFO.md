@@ -25,12 +25,10 @@
 ``class App extends Component {
   constructor(){
     super();
-
     this.state = {
       monsters: []
     };
   }
-
   render () {
     return (
         <input 
