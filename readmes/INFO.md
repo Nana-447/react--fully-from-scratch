@@ -46,3 +46,9 @@
         type="search"
     />
 );``
+
+### PROPS AND PROPS CHILDREN
+``export const CardList = (props) => {
+    console.log(props);
+    return <div>{ props.children }</div>;
+}``
