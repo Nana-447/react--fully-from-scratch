@@ -20,6 +20,9 @@
 - Never use "this.state.variable = "test";
 - The "setState" triggers and renders a new component automatically;
 
+## WHAT IS A REACT COMPONENT?
+- A function that renders a State;
+
 ## WAYS OF CREATING COMPONENTS IN REACT
 ### USING CLASSES:
 ``class App extends Component {
@@ -52,3 +55,11 @@
     console.log(props);
     return <div>{ props.children }</div>;
 }``
+
+### WHEN DO WE BREAK THINGS DOWN INTO COMPONENTS?
+- To be a great React developer, you have to know it;
+- Are you going to use this piece of layout in another moment of your app?
+
+### STATE VS. PROPS
+- State turns into props if you pass to another component as a parameter;
+- Where to put my THIS.STATE? It depends: how many components will use this information?
