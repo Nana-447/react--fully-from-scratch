@@ -63,3 +63,6 @@
 ### STATE VS. PROPS
 - State turns into props if you pass to another component as a parameter;
 - Where to put my THIS.STATE? It depends: how many components will use this information?
+
+### NEVER RUN SET STATE INSIDE RENDER. THAT WILL COST YOU A LOT OF ERRORS (EVERY TIME YOU CALL SET STATE, YOU RENDER. EVERY TIME YOU RENDER, YOU CALL SET STATE. ETERNAL LOOPING);
+
