@@ -75,3 +75,6 @@
 
 ### NEVER RUN SET STATE INSIDE RENDER. THAT WILL COST YOU A LOT OF ERRORS (EVERY TIME YOU CALL SET STATE, YOU RENDER. EVERY TIME YOU RENDER, YOU CALL SET STATE. ETERNAL LOOPING);
 
+# WHEN TO USE STATE CHANGE (STRUCTURING STATE)
+- On the higher level that will call the others;
+- Never change a state inside a component like a SearchBox for example, that uses a isolated CardList to filter information;
