@@ -25,6 +25,10 @@
 
 ## WAYS OF CREATING COMPONENTS IN REACT
 ### USING CLASSES:
+- Has access to the State;
+- Has access to the lifeCycle methods;
+- Not only receive props, but manipulates things;
+
 ``class App extends Component {
   constructor(){
     super();
@@ -42,7 +46,12 @@
   }
 }``
 
-### USING ARROW FUNCTIONS:
+### USING ARROW FUNCTIONAL:
+- Unlike Class Components, they don't have access to the STATE;
+- Do not have access to the lifeCycle methods;
+- Used just to get some props and return HTML;
+- Smaller and easier to read than Class Components;
+
 ``export const SearchBox = props => (
     <input 
         className="search-box"
