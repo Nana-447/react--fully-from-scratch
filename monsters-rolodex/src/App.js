@@ -30,6 +30,7 @@ class App extends Component { // OR I CAN USE React.Component
 
     return (
       <div className='App'>
+        <h1>Monster Rolodex</h1>
         <SearchBox 
           placeholder='Search monsters' 
           handleChange={e => this.setState({ searchField: e.target.value })}
