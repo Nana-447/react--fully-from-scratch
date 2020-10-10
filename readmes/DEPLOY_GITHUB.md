@@ -19,4 +19,8 @@
 - 6. Run predeploy. It will run the deploy right after it automatically;
 ``yarn deploy``
 
-- 7. Awesome! Your repo is live and running
+- 7. Github will ask your password
+- 8. Type:
+``git add -A``
+``git commit -m 'gh-pages'``
+``git push``
