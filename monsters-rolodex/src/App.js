@@ -7,7 +7,7 @@ import './App.css';
 
 class App extends Component { // OR I CAN USE React.Component
   constructor(){
-    super(); // CALL THE CONSTRUCTOR METHOD ON THE COMPONENT AND GIVES US ACCESS TO THE STATE
+    super(); // CALL THE CONSTRUCTOR METHOD ON THE COMPONENT AND GIVES US ACCESS TO THE STATE - IT EXTENDS TO THE WHOLE CLASS
 
     this.state = {
       monsters: [],
