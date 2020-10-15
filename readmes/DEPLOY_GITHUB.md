@@ -1,4 +1,4 @@
-## DEPLYOING USING GITHUB
+## DEPLOYING AN APP AT GITHUB.COM
 
 ## Go by theses steps:
 - 1. Go to https://www.github.com;

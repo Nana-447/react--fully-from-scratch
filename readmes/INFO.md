@@ -1,4 +1,4 @@
-# MY OWN NOTES (for React and Other Things too)
+# MY TECHNICAL NOTES / TIPS
 
 ## THIS = JavaScript Content
 
