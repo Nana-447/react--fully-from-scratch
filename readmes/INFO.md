@@ -106,7 +106,7 @@ this.handleChange = this.handleChange.bind(this);``
 
 ``handleClick3 = () => console.log('button 3 clicked');``
 
-- Resultados:
+- Results:
 - 1: it calls the function right after the page loads, because we're calling it with "()" / expection occurs when we have parameters;
 - 2: Method function because it's inside a component. It's okay;
 - 3: Calling bind javascript for function. It works, but is not pretty;
