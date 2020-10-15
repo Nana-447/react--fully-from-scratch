@@ -122,4 +122,5 @@ this.handleChange = this.handleChange.bind(this);``
 - Run ``yarn install``;
 
 ## KEEPING MY PACKAGES UP TO DATE (NPM)
-- Run ``npm update``;
+- Run ``npm update`` - Better run this command;
+- Run ``npm install`` - Sometimes will skip some versions that it thinks it has to be skipped;
