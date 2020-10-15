@@ -114,3 +114,12 @@ this.handleChange = this.handleChange.bind(this);``
 - 4: Arrow functions. The best way and incorporates bind inside method function automatically;
 
 ## REACT AND REACT DOM
+- Check out the project [Pure React](https://github.com/jvlessa/React--Zero-To-Mastery/tree/master/pure-react) to understand how it works;
+
+## KEEPING MY PACKAGES UP TO DATE (YARN)
+- Add the "^" before the version of each library on your "package.json" to get always the latest version of your lib;
+- Run ``yarn upgrade``;
+- Run ``yarn install``;
+
+## KEEPING MY PACKAGES UP TO DATE (NPM)
+- Run ``npm update``;
