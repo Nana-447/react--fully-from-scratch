@@ -11,10 +11,10 @@
     <script src="https://unpkg.com/react@16.8.6/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16.8.6/umd/react-dom.development.js"></script>
     <script>
-        const Person = () => {
+        const Person = (props) => {
             return React.createElement('div', {}, [
-                React.createElement('h1', {}, 'Joao'),
-                React.createElement('h2', {}, 'Developer'),
+                React.createElement('h1', {}, props.name),
+                React.createElement('h2', {}, props.occupation),
                 React.createElement('h3', {}, 'Full Stack')
             ])
         };
@@ -22,9 +22,8 @@
         const App = () => {
             return React.createElement('div', {}, [
                 React.createElement('h1', {}, 'REACT IS RENDERED!!!'),
-                React.createElement(Person),
-                React.createElement(Person),
-                React.createElement(Person)
+                React.createElement(Person, {name: 'Joao', occupation: 'Developer'}),
+                React.createElement(Person, {name: 'Jones', occupation: 'hehe'})
             ]
             );
         };
