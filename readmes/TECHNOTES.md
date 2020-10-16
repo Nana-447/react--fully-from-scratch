@@ -124,3 +124,27 @@ this.handleChange = this.handleChange.bind(this);``
 ## KEEPING MY PACKAGES UP TO DATE (NPM)
 - Run ``npm update`` - Better run this command;
 - Run ``npm install`` - Sometimes will skip some versions that it thinks it has to be skipped;
+
+## RENDER CHROME DEBUGGER
+- F12;
+- 3 DOTS;
+- MORE TOOLS;
+- RENDERING;
+- PAINT FLASHING;
+
+## SUPER
+- Basically shares the props that the component receives
+- It extends the whole class and its props;
+
+## ASYNC SETSTATE
+- I do have to pass a function instead of an object and call prevState and prevPros
+``this.state((prevState, prevPros) => {``
+``   return {meaningOfLife: this.state.meaningOfLife + 1}``
+``},``
+``   () => console.log(this.state.meaningOfLife)``
+``)``
+
+## PROPS INSIDE CONSTRUCTOR AND SUPER
+- It allows you to use props passed to the component inside the constructor and not only inside the functions;
+- ``constructor(props)``
+- ``super(props)``
