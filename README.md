@@ -16,7 +16,7 @@
 #### It's simple: 
 #### 1 - Check out all the [installation guide](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/INSTALLATION%20GUIDE.md)
 #### 2 - See how to [Create a React App](https://reactjs.org/docs/create-a-new-react-app.html)
-#### 3 - Check my [Technical Notes / Tips](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/TECHNOTES.md.md)
+#### 3 - Check my [Technical Notes / Tips](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/TECHNOTES.md)
 #### 4 - See how to develop a React App using [Classes, take a look here](https://reactjs.org/docs/react-component.html)
 #### 5 - Check [how to Deploy an App at Github.com](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/DEPLOY_GITHUB.md)
 
