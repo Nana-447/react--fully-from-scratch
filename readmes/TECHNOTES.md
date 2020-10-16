@@ -148,3 +148,13 @@ this.handleChange = this.handleChange.bind(this);``
 - It allows you to use props passed to the component inside the constructor and not only inside the functions;
 - ``constructor(props)``
 - ``super(props)``
+
+## LIFECYCLES FOR CLASS COMPONENTS
+- constructor() = "Start"
+- super() is used inside the constructor to use the lifecycles and extend props and functions;
+
+- render();
+- componentDidMount() = "OnOpen" API calls basically comes here
+- componentDidUpdate(); = "OnLoad" - usually triggered everytime the component is rerendered (setState);
+- shouldComponentUpdate(nextProps, nextState) = Based on the new props or newState, we can trigger or not the rerender. If return true, our component will update. If return false, it will not update; 
+- componentWillUnmount(); = "OnClose"
