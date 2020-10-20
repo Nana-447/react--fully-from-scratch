@@ -19,7 +19,7 @@
 #### 3 - See how to develop a React App using [Classes, take a look here](https://reactjs.org/docs/react-component.html)
 #### 4 - Check [how to Deploy an App at Github.com](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/DEPLOY_GITHUB.md)
 #### 5 - Check my [General's Technical Notes / Tips](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/TECHNOTES.md)
-#### 6 - Check all the [Technical Notes / Tips] that I have used on my CRWN - Clothing Store Project](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/CRWN-TECHNOTES.md)
+#### 6 - Check all the [Technical Notes / Tips that I have used on my CRWN - Clothing Store Project](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/CRWN-TECHNOTES.md)
 
 ## How do I run your projects, João? 
 #### For running "Monsters-Rolodex" App:
