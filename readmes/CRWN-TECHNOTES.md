@@ -6,10 +6,12 @@
 
 - "&" = Append this aditional select (.menu-item:first-child)
 - If you want, you can NEST classes on SASS:
-```.content {
+```
+.content {
       border: 0px solid black;
 
       .test{
-        color: white;
+            color: white;
       }
-}```
+}
+```
