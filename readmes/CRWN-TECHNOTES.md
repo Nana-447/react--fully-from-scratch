@@ -15,3 +15,6 @@
       }
 }
 ```
+
+## PAGE COMPONENTS VS. COMPONENTS
+- Page Component you will use it no more than once;
