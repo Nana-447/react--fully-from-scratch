@@ -158,3 +158,8 @@ this.handleChange = this.handleChange.bind(this);``
 - componentDidUpdate(); = "OnLoad" - usually triggered everytime the component is rerendered (setState);
 - shouldComponentUpdate(nextProps, nextState) = Based on the new props or newState, we can trigger or not the rerender. If return true, our component will update. If return false, it will not update; 
 - componentWillUnmount(); = "OnClose"
+
+## ROUTING IN REACT ##
+- React is not a framework that comes with a routing pre-built like Angular;
+- React lets you use any kind of routing you want;
+- The most used one is [React Router](https://reactrouter.com/);
