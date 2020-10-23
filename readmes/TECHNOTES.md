@@ -177,3 +177,6 @@ this.handleChange = this.handleChange.bind(this);``
 - ``<button onClick={() => props.history.push('/topics')}>Topics</button>`;
 - Using Location the make dinamically URL's:
 - ``<Link to={`${props.match.url}/21`}> Topics </Link>``;
+
+## WITH ROUTER (REACT-ROUTER-DOM)
+- Superpower the components with the routes on a higher lever;
