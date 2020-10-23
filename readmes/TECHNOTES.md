@@ -163,3 +163,17 @@ this.handleChange = this.handleChange.bind(this);``
 - React is not a framework that comes with a routing pre-built like Angular;
 - React lets you use any kind of routing you want;
 - The most used one is [React Router](https://reactrouter.com/);
+
+- COMPONENTS IN REACT ALWAYS RENDERS 3 PROPS: history, location, match;
+- EXACT DISABLED: if we do not use it, it will render all components that has "/" for example;
+- EXACT ENABLED: if we use it, it will render only the component that has "/" and that's it;
+- PATH: '/page/:parameterId' - the parameter can be dinamically rendered;
+- To acess the parameter dinamically called, can be accessed through: "props.match.params.parameterId";
+
+- Navigating using Router Dom:
+- ``import {Link} from 'react-router-dom'``;
+- ``<Link to='/topics'> Topics </Link>``;
+- Or we can use:
+- ``<button onClick={() => props.history.push('/topics')}>Topics</button>`;
+- Using Location the make dinamically URL's:
+- ``<Link to={`${props.match.url}/21`}> Topics </Link>``;
