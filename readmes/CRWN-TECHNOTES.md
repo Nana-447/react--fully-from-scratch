@@ -18,3 +18,8 @@
 
 ## PAGE COMPONENTS VS. COMPONENTS
 - Page Component you will use it no more than once;
+
+## FORMS
+- Sign In has its own state;
+- Register Log In has its own state;
+- Those states do not talk to each other;
