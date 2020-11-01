@@ -23,3 +23,8 @@
 - Sign In has its own state;
 - Register Log In has its own state;
 - Those states do not talk to each other;
+
+## SASS TIPS:
+- Ways of refering a style inside another one;
+- ``@mixin shrinkLabel {color: black};``
+- ``&focus ~ .form-input-label{ @include shrinkLabel(); }``
