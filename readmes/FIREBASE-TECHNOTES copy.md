@@ -1,9 +1,8 @@
 # FIREBASE TECHNICAL NOTES
 
-1. [Access firebase](https://firebase.google.com/);
+1. [Access firebase](https://firebase.google.com/)
 
 2. LogIn to your Google Account;
-
 3. [Go to Console](https://console.firebase.google.com/u/0/?pli=1);
 
 4. Add / Create a new project and name it;
@@ -31,5 +30,11 @@
 ```
 
 10. Add yarn firebase to frontend react project:
-
 ``yarn add firebase``
+
+11. Create a component in React like [this]()
+
+12. In case you want to allow SignIn with Google, that is the case:
+- Go to the tab "Authentication" on firebase admin;
+- Click on "SignIn Methods";
+- Enable Google;
