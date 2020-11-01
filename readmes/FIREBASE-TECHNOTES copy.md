@@ -32,7 +32,7 @@
 10. Add yarn firebase to frontend react project:
 ``yarn add firebase``
 
-11. Create a component in React like [this]()
+11. Create a component in React like [this](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/crwn-clothing/src/firebase/firebase.utils.js)
 
 12. In case you want to allow SignIn with Google, that is the case:
 - Go to the tab "Authentication" on firebase admin;
