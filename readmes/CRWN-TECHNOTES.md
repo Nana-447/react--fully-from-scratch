@@ -2,10 +2,10 @@
 
 ## APP ARCHITECTURE
 ### FRONTEND
-<img width="750" src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/crwn-fronted.jpg">
+<img width="500" src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/crwn-fronted.jpg">
 
 ### BACKEND
-<img width="750" src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/crwn-backend.jpg">
+<img width="500" src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/crwn-backend.jpg">
 
 ## [SASS](https://sass-lang.com/install)
 - Install react SASS;
