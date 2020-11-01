@@ -15,7 +15,6 @@
       }
 }
 ```
-
 ## PAGE COMPONENTS VS. COMPONENTS
 - Page Component you will use it no more than once;
 
@@ -28,3 +27,7 @@
 - Ways of refering a style inside another one;
 - ``@mixin shrinkLabel {color: black};``
 - ``&focus ~ .form-input-label{ @include shrinkLabel(); }``
+
+## FIREBASE IMPLEMENTATION:
+- [API Docs for Web](https://firebase.google.com/docs/auth/web/)
+- [Google Auth](https://firebase.google.com/docs/auth/web/google-signin)
