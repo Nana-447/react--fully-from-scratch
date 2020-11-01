@@ -1,14 +1,14 @@
 # FIREBASE TECHNICAL NOTES
 
-- 1. [Access firebase](https://firebase.google.com/)
-- 2. LogIn to your Google Account;
-- 3. [Go to Console](https://console.firebase.google.com/u/0/?pli=1);
-- 4. Add / Create a new project and name it;
-- 5. After Creating it, go to the homepage of the project;
-- 6. Go to the main "Project Overview";
-- 7. Click on "WEB" to add a new App;
-- 8. Type a nickname of the app;
-- 9. Copy the firebaseConfig given, as below:
+1. [Access firebase](https://firebase.google.com/)
+2. LogIn to your Google Account;
+3. [Go to Console](https://console.firebase.google.com/u/0/?pli=1);
+4. Add / Create a new project and name it;
+5. After Creating it, go to the homepage of the project;
+6. Go to the main "Project Overview";
+7. Click on "WEB" to add a new App;
+8. Type a nickname of the app;
+9. Copy the firebaseConfig given, as below:
 ```
 {
     apiKey: "AIzaSyAcUhSYeM3N-L7DYdTS6oCuXO-vfBV-6wo",
@@ -22,5 +22,5 @@
 };
 ```
 
-- 10. Add yarn firebase to frontend react project:
+10. Add yarn firebase to frontend react project:
 ``yarn add firebase``
