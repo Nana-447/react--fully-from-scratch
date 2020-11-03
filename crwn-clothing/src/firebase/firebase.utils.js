@@ -13,6 +13,36 @@ const config = {
     measurementId: "G-CF6H42QD9B"
 };
 
+// Function to get user from Database
+export const createUserProfileDocument = async(userAuth, additionalData) => {
+    // If no object returned
+    if (!userAuth) return
+
+    // Query inside Firestore
+    const userRef = firestore.doc(`users/${userAuth.uid}`);
+    
+    const snapShot = await userRef.get();
+
+    if(!snapShot.exists){
+        const { displayName, email } = userAuth;
+        const createdAt = new Date();
+
+        try{
+            await userRef.set({
+                displayName,
+                email,
+                createdAt,
+                ...additionalData
+            });
+        } 
+        catch(error) {
+            console.log('error creating user', error.message);
+        }
+    }
+
+    return userRef;
+}
+
 firebase.initializeApp(config);
 
 // We can use anywhere we want, calling them below:
