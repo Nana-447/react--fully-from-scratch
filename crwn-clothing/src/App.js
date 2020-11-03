@@ -25,8 +25,24 @@ class App extends React.Component {
   componentDidMount(){
     // Method from Firebase that tells the App when the user has some change
     // It works as a subscriber method that keeps listening to its changes    
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(async user => {
-      createUserProfileDocument(user);
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+      if (userAuth){
+        const userRef = await createUserProfileDocument(userAuth);
+
+        userRef.onSnapshot(snapshot => {
+          this.setState({
+            currentUser: {
+              id: snapshot.id,
+              ...snapshot.data()
+            }
+          }, () => {
+            console.log(this.state);
+          });
+        });
+      }
+      else{
+        this.setState({ currentUser: userAuth });
+      }
     });
   }
 
