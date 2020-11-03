@@ -1,5 +1,9 @@
 # FIREBASE TECHNICAL NOTES
 
+- NoSQL Database or else: I giant JSON;
+
+## FIREBASE INSTALLATION
+
 1. [Access firebase](https://firebase.google.com/)
 
 2. LogIn to your Google Account;
@@ -38,3 +42,44 @@
 - Go to the tab "Authentication" on firebase admin;
 - Click on "SignIn Methods";
 - Enable Google;
+
+## DATABASE CREATION
+
+1. Go to the Firebase BD dashboard;
+
+2. Click on ["Cloud FireStore"](https://console.firebase.google.com/u/0/project/crwn-db--lessa/firestore);
+
+3. Click on "Create New Database";
+
+4. Select "Test Mode";
+
+5. Select the timezone of the database. You can choose only once;
+
+6. Advance to enable and create the database and wait until the screen loads;
+
+### IMPORTANT TO KNOW
+- Collections: groups of objects;
+- Document: the real final data;
+- You can put collections inside each document;
+- Collection (table) >> Document (row) >> Collection (table) >> etc;
+
+### MAIN METHODS OF GETTING DOCUMENTS AND COLLECTIONS FROM FIREBASE
+
+```
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+
+const firestore = firebase.firestore();
+```
+
+- Long Query:
+
+`` firestore.collection('users').doc('id099012092').collection('cartItems').doc('id120931290') ``
+
+- Short Query for DOC:
+
+`` firestore.doc('/users/id099012092/cartItems/id120931290') ``
+
+- Short Query for Collection:
+
+`` firestore.collection('/users/id099012092/cartItems') ``
