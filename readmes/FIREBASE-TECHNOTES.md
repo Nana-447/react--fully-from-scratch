@@ -43,6 +43,8 @@
 - Click on "SignIn Methods";
 - Enable Google;
 
+13. Also, Enable email and password;
+
 ## DATABASE CREATION
 
 1. Go to the Firebase BD dashboard;
