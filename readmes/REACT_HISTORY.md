@@ -68,3 +68,14 @@
 
 3. What Changes When State Changes;
     - What State Changes? What Part Of The Virtual Dom?
+
+## Virtual DOM vs. DOM vs. Shadow DOM
+
+### DOM
+- Document Object Model and is an abstraction of a structured text. For web developers, this text is an HTML code, and the DOM is simply called HTML DOM. Elements of HTML become nodes in the DOM;
+
+### Virtual DOM
+- Virtual DOM was not invented by React, but React uses it and provides it for free.
+Perhaps it’s better to think of the virtual DOM as React’s local and simplified copy of the HTML DOM. It allows React to do its computations within this abstract world and skip the “real” DOM operations, often slow and browser-specific.
+
+- There’s no big difference between the “regular” DOM and the virtual DOM. This is why the JSX parts of the React code can look almost like pure HTML;
