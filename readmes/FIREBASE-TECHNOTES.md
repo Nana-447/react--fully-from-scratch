@@ -57,13 +57,13 @@
 
 6. Advance to enable and create the database and wait until the screen loads;
 
-### IMPORTANT TO KNOW
+## IMPORTANT TO KNOW
 - Collections: groups of objects;
 - Document: the real final data;
 - You can put collections inside each document;
 - Collection (table) >> Document (row) >> Collection (table) >> etc;
 
-### MAIN METHODS OF GETTING DOCUMENTS AND COLLECTIONS FROM FIREBASE
+## MAIN METHODS OF GETTING DOCUMENTS AND COLLECTIONS FROM FIREBASE
 
 ```
 import firebase from 'firebase/app';
@@ -114,7 +114,7 @@ const firestore = firebase.firestore();
 
 - We get the Snapshot running ".get()" from a Reference;
 
-### FIREBASE ERROR OF READING / PERMISSIONS
+## FIREBASE ERROR OF READING / PERMISSIONS
 
 - There has been a recent update in Firebase's database for new users where by default, there is a permission rule that disables reading from the database after 30 days! If this is not changed, some of you may start to see an error in your application saying FirebaseError: Missing or insufficient permissions;
 
