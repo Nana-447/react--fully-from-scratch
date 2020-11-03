@@ -113,3 +113,11 @@ const firestore = firebase.firestore();
 `` collectionRef.add({value: prop}); ``
 
 - We get the Snapshot running ".get()" from a Reference;
+
+### FIREBASE ERROR OF READING / PERMISSIONS
+
+- There has been a recent update in Firebase's database for new users where by default, there is a permission rule that disables reading from the database after 30 days! If this is not changed, some of you may start to see an error in your application saying FirebaseError: Missing or insufficient permissions;
+
+- This can be quickly fixed by navigating to the rules tab in the database of your firestore console;
+
+- If you do not see `` request.time < timestamp.date(year, month, day); `` on line 5, you don't need to worry about this. If you do, just remove it, and replace the `` : if `` with a `` ; `` on line 4;
