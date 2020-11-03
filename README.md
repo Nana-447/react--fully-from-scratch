@@ -23,13 +23,20 @@
 #### 7 - I have used FireBase as the Database for my CRWN - Clothing Store Project. [Click here to see each step](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/FIREBASE-TECHNOTES.md)
 
 ## How do I run your projects, João? 
+
+#### For running "CRWN-Clothing" App:
+  - Access the directory folder (crwn-clothing);
+  - Run `npm install`;
+  - Run `npm start`;
+  
 #### For running "Monsters-Rolodex" App:
-  - Access the directory folder (monster rolodex);
+  - Access the directory folder (monster-rolodex);
   - Run `npm install`;
   - Run `npm start`;
 
 #### For running "Pure-React" App:
+  - Access the directory folder (pure-react);
   - Just double-click on the "index.html" file and check it out your browser;
 
-## Want to see the projects running? 
+## Want to see the DEMO of the projects? 
 [Monster Rolodex here](https://jvlessa.github.io/React--Zero-To-Mastery/)
