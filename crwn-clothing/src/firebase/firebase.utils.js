@@ -19,16 +19,16 @@ export const createUserProfileDocument = async(userAuth, additionalData) => {
     if (!userAuth) return
 
     // Query inside Firestore
-    const userRef = firestore.doc(`users/${userAuth.uid}`);
-    
-    const snapShot = await userRef.get();
+    const userRef = firestore.doc(`users/${userAuth.uid}`); // Query Reference
+    const snapShot = await userRef.get(); // Get Snapshot of the Reference
 
-    if(!snapShot.exists){
+    if(!snapShot.exists){ // If there is no Snapshot, we are going to create one
         const { displayName, email } = userAuth;
         const createdAt = new Date();
 
         try{
-            await userRef.set({
+            // Creating a New Snapshot for this reference (saving data)
+            await userRef.set({ // Set is the Create Method
                 displayName,
                 email,
                 createdAt,
@@ -40,7 +40,7 @@ export const createUserProfileDocument = async(userAuth, additionalData) => {
         }
     }
 
-    return userRef;
+    return userRef; // If we want to use the Doc Reference to use somewhere
 }
 
 firebase.initializeApp(config);
