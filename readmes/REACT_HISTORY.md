@@ -51,6 +51,11 @@
 		- Vr (React 360);
 		- Electron And React Desktop;
         - React To Blessed (Terminal);
+	
+## What is a State?
+- In simple terms, state is simply an object that contains all your key-value pairs. State determines how your components render and behave;
+- State allows your components to be dynamic and interactive;
+- State is not to be confused with props. State is what is managed within the component, whereas props is what gets passed to the component;
 
 ## React keywords
 - Declarative = React Is A Tecnology Because We Tell It A State
@@ -80,8 +85,8 @@ Perhaps it’s better to think of the virtual DOM as React’s local and simplif
 
 - There’s no big difference between the “regular” DOM and the virtual DOM. This is why the JSX parts of the React code can look almost like pure HTML;
 
-## LIFE CYCLE METHODS
+## Life Cycle Methods
 <img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/reactlifecyclemethods.png" width=650 />
 
-## CLASSES VS. HOOKS
+## Classes vs. Hooks
 https://reactjs.org/docs/hooks-effect.html
