@@ -88,5 +88,25 @@ Perhaps it’s better to think of the virtual DOM as React’s local and simplif
 ## Life Cycle Methods
 <img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/reactlifecyclemethods.png" width=650 />
 
+## Functional Components also known as Stateless component
+
+- It is simple javascript functions that simply returns html UI;
+- It is also called “stateless” components because they simply accept data and display them in some form that is they are mainly responsible for rendering UI;
+- It accept properties(props) in function and return html(JSX)
+- It gives solution without using state
+- There is no render method used in functional components.
+- These can be typically defined using arrow functions but can also be created with the regular function keyword.
+
+## Class Component or Stateful Component
+
+- It is regular ES6 classes that extends component class form react library
+- Also known as “stateful” components because they implement logic and state.
+- It must have render() method returning html
+- It has complex UI Logic
+- You pass props to class components and access them with this.props
+
 ## Classes vs. Hooks
 https://reactjs.org/docs/hooks-effect.html
+
+## What are Hooks?
+- Hooks are a new addition to React in version 16.8 that allows you use state and other React features, like lifecycle methods, without writing a class;
