@@ -105,8 +105,17 @@ Perhaps it’s better to think of the virtual DOM as React’s local and simplif
 - It has complex UI Logic
 - You pass props to class components and access them with this.props
 
-## Classes vs. Hooks
-https://reactjs.org/docs/hooks-effect.html
+## Hooks
+- React hooks let you use state and React lifecycle features without using class and React component lifecycle methods. They were introduced in React 16.8;
+- React Hooks provides an easy way of handling the component behavior and share the component logic;
 
-## What are Hooks?
-- Hooks are a new addition to React in version 16.8 that allows you use state and other React features, like lifecycle methods, without writing a class;
+## Redux
+- Redux is a library for managing the global application state. In this library, we can find several tools that help us, developers, to be in touch with the state of the application and also transform it by giving the user the ability to emit actions;
+
+## React Hooks vs Redux
+- Both of them handle state management, but with several differences. 
+- There is a lot of abstraction into the following sentence, but this seems like a golden rule to know when you should use Redux into your application:
+- Redux should be used in applications that have several features. With these features sharing chunks of the same information;
+
+### useContext hook
+- The useContext hook comes to access the state that is shared by the providers. The best-case scenario to use the React Hooks useContext is in a small application or to share small pieces of information across the components, like the theme of the application.
