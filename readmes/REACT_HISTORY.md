@@ -81,7 +81,7 @@ Perhaps it’s better to think of the virtual DOM as React’s local and simplif
 - There’s no big difference between the “regular” DOM and the virtual DOM. This is why the JSX parts of the React code can look almost like pure HTML;
 
 ## LIFE CYCLE METHODS
-<img src="#" width=200 />
+<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/reactlifecyclemethods.png" width=650 />
 
 ## CLASSES VS. HOOKS
 https://reactjs.org/docs/hooks-effect.html
