@@ -72,7 +72,7 @@
 
 ## REDUCERS
 - We can split them, as the image:
-<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/reduxReducers.jpg" width=800 />
+<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/reactReducers.jpg" width=800 />
 
 - Reducers are functions: that has a state and an action;
 
@@ -93,4 +93,4 @@ const userReducer = (currentState, action) => {
 
 ## ACTION LIFECYCLE
 
-<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/ActionLifeCycle.jpg" width=800 />
+<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/actionLifeCycle.jpg.jpg" width=800 />
