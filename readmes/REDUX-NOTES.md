@@ -65,7 +65,7 @@
 - We need share the value, not replicating the same state for each different value;
 - STATE = SINGLE RESOURCE OF TRUTH;
 
-<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/reduxFlow2.jpg" width=800 />
+<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/reduxFlow2.jpg" width=1200 />
 
 - Reducer basically is used to control everything of a state;
 - Root reducer controls all reducers;
