@@ -61,7 +61,7 @@
 ## AVOIDING DRILLING STATES THROUGH COMPONENTS
 
 - Sometimes, we have to use states on children components that comes from parent components;
-- Sometimes, we have 3 or more components that don't even use ths state passed;
+- Sometimes, we have 3+ or more components that don't even use this.state passed;
 - We need share the value, not replicating the same state for each different value;
 - STATE = SINGLE RESOURCE OF TRUTH;
 
