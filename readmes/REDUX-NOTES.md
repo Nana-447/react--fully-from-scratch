@@ -56,3 +56,16 @@
 ### But why don't we use only "Actions" and "DOM Changes"?
 
 - Because it would be a mess, like jQuery doing lots of actions with taking care of lots of behaviors at the same time;
+
+
+## AVOIDING DRILLING STATES THROUGH COMPONENTS
+
+- Sometimes, we have to use states on children components that comes from parent components;
+- Sometimes, we have 3 or more components that don't even use ths state passed;
+- We need share the value, not replicating the same state for each different value;
+- STATE = SINGLE RESOURCE OF TRUTH;
+
+<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/reduxFlow2.jpg" width=800 />
+
+- Reducer basically is used to control everything of a state;
+- Root reducer controls all reducers;
