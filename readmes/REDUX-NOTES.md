@@ -69,3 +69,28 @@
 
 - Reducer basically is used to control everything of a state;
 - Root reducer controls all reducers;
+
+## REDUCERS
+- We can split them, as the image:
+<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/reduxReducers.jpg" width=800 />
+
+- Reducers are functions: that has a state and an action;
+
+```
+const userReducer = (currentState, action) => {
+    switch(action.type){
+        case 'SET_CURRENT_USER':
+            return{
+                ...currentState,
+                currentState: action.payload
+            };
+        default:
+            return currentState;
+    }
+
+}; // => { currentUser: { ... } }
+```
+
+## ACTION LIFECYCLE
+
+<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/ActionLifeCycle.jpg" width=800 />
