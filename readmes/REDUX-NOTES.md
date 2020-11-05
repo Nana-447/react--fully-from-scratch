@@ -93,4 +93,4 @@ const userReducer = (currentState, action) => {
 
 ## ACTION LIFECYCLE
 
-<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/actionLifeCycle.jpg.jpg" width=800 />
+<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/actionLifeCycle.jpg" width=800 />
