@@ -94,3 +94,12 @@ const userReducer = (currentState, action) => {
 ## ACTION LIFECYCLE
 
 <img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/actionLifeCycle.jpg" width=800 />
+
+## MIDDLEWARE
+
+- Located between "Action" and "Root Reducer";
+- Piece of code that gets the action before the reducer;
+- In this project, we're using "Redux Logger Middleware";
+
+- Installing Redux (3 main libraries):
+`` yarn add redux redux-logger react-redux ``
