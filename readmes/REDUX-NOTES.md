@@ -101,5 +101,5 @@ const userReducer = (currentState, action) => {
 - Piece of code that gets the action before the reducer;
 - In this project, we're using "Redux Logger Middleware";
 
-- Installing Redux (3 main libraries):
+## INSTALLING REDUX (3 main libraries):
 `` yarn add redux redux-logger react-redux ``
