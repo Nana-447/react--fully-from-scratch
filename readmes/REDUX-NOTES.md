@@ -101,5 +101,23 @@ const userReducer = (currentState, action) => {
 - Piece of code that gets the action before the reducer;
 - In this project, we're using "Redux Logger Middleware";
 
-## INSTALLING REDUX (3 main libraries):
+## INSTALLING REDUX
+
+1. Install the 3 main libraries:
 `` yarn add redux redux-logger react-redux ``
+
+2. Import { Provider } on the index.js and wrap the whole code:
+
+```
+import { Provider } from 'react-redux';
+
+ReactDOM.render(
+  <Provider>
+  ........
+  </Provider>,
+  document.getElementById('root')
+);
+```
+3. Create the folder "redux" inside your app folders;
+
+4. Start creating and linking your reducers up;
