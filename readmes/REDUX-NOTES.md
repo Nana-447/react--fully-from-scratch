@@ -121,3 +121,5 @@ ReactDOM.render(
 3. Create the folder "redux" inside your app folders;
 
 4. Start creating and linking your reducers up;
+
+5. Create the "store.js" to use the MiddleWare;
