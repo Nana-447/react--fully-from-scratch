@@ -1,6 +1,7 @@
 # REDUX NOTES
 
 ## WHAT'S REDUX
+- [Redux official website](https://redux.js.org/)
 - Redux is basically a library to help React to manage state;
 - Redux allows react state to be more scalable;
 - Good for managing large state;
@@ -118,8 +119,13 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
-3. Create the folder "redux" inside your app folders;
+3. Create the folder "redux" inside your app folders
+4. Create your reducers;
+5. Link them all;
+- Step 3, 4, 5 can be found on these commits:
+- [Commit 1](https://github.com/jvlessa/React--Zero-To-Mastery/commit/6feef60f9e4e9caed0fc2c2297176faf0175391b)
+- [Commit 2](https://github.com/jvlessa/React--Zero-To-Mastery/commit/60e0b4e3122987f128c206a7876f9e129cfd8910)
 
-4. Start creating and linking your reducers up;
+6. Create the app "store.js" to use the MiddleWare. [Commit here](https://github.com/jvlessa/React--Zero-To-Mastery/commit/c2e791490e7a8c07198adc22e8f1aad9175acac2);
 
-5. Create the "store.js" to use the MiddleWare;
+7. Create the "actions.js" for the reducers. [Commit here](https://github.com/jvlessa/React--Zero-To-Mastery/commit/851fa34dc1d5432a4bf7ff6454b43fed0d5a8a81)
