@@ -122,7 +122,7 @@ ReactDOM.render(
 3. Create the folder "redux" inside your app folders
 4. Create your reducers;
 5. Link them all;
-- Step 3, 4, 5 can be found on these commits:
+- Step 2, 3, 4, 5 can be found on these commits:
 - [Commit 1](https://github.com/jvlessa/React--Zero-To-Mastery/commit/6feef60f9e4e9caed0fc2c2297176faf0175391b)
 - [Commit 2](https://github.com/jvlessa/React--Zero-To-Mastery/commit/60e0b4e3122987f128c206a7876f9e129cfd8910)
 
