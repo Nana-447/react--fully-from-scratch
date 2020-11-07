@@ -54,7 +54,7 @@ class App extends React.Component {
   render(){
     return (
       <div>
-        <Header currentUser={this.state.currentUser} />
+        <Header/>
         <Switch> {/* Switch matches only one and nothing more after it. Unique router */}
           <Route exact path='/' component={HomePage} />
           <Route exact path='/shop' component={ShopPage} />
