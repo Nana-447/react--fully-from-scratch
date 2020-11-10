@@ -142,3 +142,5 @@ ReactDOM.render(
 
     * <b>"mapStateToProps":</br> It connects redux state to props of react component;
     * <b>"mapDispatchToProps":</br> It connects redux actions to react props;
+
+* <b>Step 10:</b> Use a file to declared constant values for the actions types. [See commit here](https://github.com/jvlessa/React--Zero-To-Mastery/commit/7fff51f5f80fdc52f42a219dad27c447339d2051);
