@@ -104,10 +104,10 @@ const userReducer = (currentState, action) => {
 
 ## INSTALLING REDUX
 
-1. Install the 3 main libraries:
+* <b>Step 1:</b> Install the 3 main libraries:
 `` yarn add redux redux-logger react-redux ``
 
-2. Import { Provider } on the index.js and wrap the whole code:
+* <b>Step 2:</b> Import { Provider } on the index.js and wrap the whole code:
 
 ```
 import { Provider } from 'react-redux';
@@ -119,26 +119,26 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
-3. Create the folder "redux" inside your app folders
-4. Create your reducers;
-5. Link them all;
-- <b>Steps [2, 3, 4, 5] can be found on these commits:</b>
-- [Commit 1](https://github.com/jvlessa/React--Zero-To-Mastery/commit/6feef60f9e4e9caed0fc2c2297176faf0175391b)
-- [Commit 2](https://github.com/jvlessa/React--Zero-To-Mastery/commit/60e0b4e3122987f128c206a7876f9e129cfd8910)
+* <b>Step 3:</b> Create the folder "redux" inside your app folders
+* <b>Step 4:</b> Create your reducers;
+* <b>Step 5:</b> Link them all;
+    * <b>Steps [2, 3, 4, 5] can be found on these commits:</b>
+    * [Commit 1](https://github.com/jvlessa/React--Zero-To-Mastery/commit/6feef60f9e4e9caed0fc2c2297176faf0175391b)
+    * [Commit 2](https://github.com/jvlessa/React--Zero-To-Mastery/commit/60e0b4e3122987f128c206a7876f9e129cfd8910)
 
-6. Create the app "store.js" to use the MiddleWare. [Commit here](https://github.com/jvlessa/React--Zero-To-Mastery/commit/c2e791490e7a8c07198adc22e8f1aad9175acac2);
+* <b>Step 6:</b> Create the app "store.js" to use the MiddleWare. [Commit here](https://github.com/jvlessa/React--Zero-To-Mastery/commit/c2e791490e7a8c07198adc22e8f1aad9175acac2);
 
-7. Create the "actions.js" for the reducers. [Commit here](https://github.com/jvlessa/React--Zero-To-Mastery/commit/851fa34dc1d5432a4bf7ff6454b43fed0d5a8a81)
+* <b>Step 7:</b> Create the "actions.js" for the reducers. [Commit here](https://github.com/jvlessa/React--Zero-To-Mastery/commit/851fa34dc1d5432a4bf7ff6454b43fed0d5a8a81)
 
-8. Connect the components and its values using "connect()" and "mapStateToProps". [See commit](https://github.com/jvlessa/React--Zero-To-Mastery/commit/c3d51ef5c8734e24b9f6380cdbd11cab02c7ceb2)
+* <b>Step 8:</b> Connect the components and its values using "connect()" and "mapStateToProps". [See commit](https://github.com/jvlessa/React--Zero-To-Mastery/commit/c3d51ef5c8734e24b9f6380cdbd11cab02c7ceb2)
 
-9. This part is kinda hard to understand, but let's try to simply explain: 
-- It's required that the "connect" from redux must be imported: `` export default connect(null, mapDispatchToProps)(App) ``;
-- The "action.js" file does not need to be linked directly with the reducer. It can have any name;
-- We need to use "mapmapDispatchToProps" to set a new value using the action throught the connect;
-- The only requirement that an "action.js" file needs to have, it's the type. For example: `` type: 'SET_CURRENT_USER' ``;
-- The reducer must have this type to recognize the action;
-- Check the commit calling a header [component here](https://github.com/jvlessa/React--Zero-To-Mastery/commit/1c415739de7fdbca1647e1524fd6064c06f408c0), passing the logged user from the app;
+* <b>Step 9:</b> This part is kinda hard to understand, but let's try to simply explain: 
+    * It's required that the "connect" from redux must be imported: `` export default connect(null, mapDispatchToProps)(App) ``;
+    * The "action.js" file does not need to be linked directly with the reducer. It can have any name;
+    * We need to use "mapmapDispatchToProps" to set a new value using the action throught the connect;
+    * The only requirement that an "action.js" file needs to have, it's the type. For example: `` type: 'SET_CURRENT_USER' ``;
+    * The reducer must have this type to recognize the action;
+    * Check the commit calling a header [component here](https://github.com/jvlessa/React--Zero-To-Mastery/commit/1c415739de7fdbca1647e1524fd6064c06f408c0), passing the logged user from the app;
 
-- <b>"mapStateToProps":</br> It connects redux state to props of react component;
-- <b>"mapDispatchToProps":</br> It connects redux actions to react props;
+    * <b>"mapStateToProps":</br> It connects redux state to props of react component;
+    * <b>"mapDispatchToProps":</br> It connects redux actions to react props;
