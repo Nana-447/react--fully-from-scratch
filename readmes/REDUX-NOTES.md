@@ -131,3 +131,14 @@ ReactDOM.render(
 7. Create the "actions.js" for the reducers. [Commit here](https://github.com/jvlessa/React--Zero-To-Mastery/commit/851fa34dc1d5432a4bf7ff6454b43fed0d5a8a81)
 
 8. Connect the components and its values using "connect()" and "mapStateToProps". [See commit](https://github.com/jvlessa/React--Zero-To-Mastery/commit/c3d51ef5c8734e24b9f6380cdbd11cab02c7ceb2)
+
+9. This part is kinda hard to understand, but let's try to simply explain: 
+- It's required that the "connect" from redux must be imported: `` export default connect(null, mapDispatchToProps)(App) ``;
+- The "action.js" file does not need to be linked directly with the reducer. It can have any name;
+- We need to use "mapmapDispatchToProps" to set a new value using the action throught the connect;
+- The only requirement that an "action.js" file needs to have, it's the type. For example: `` type: 'SET_CURRENT_USER' ``;
+- The reducer must have this type to recognize the action;
+- Check the commit calling a header [component here](), passing the logged user from the app;
+
+- <b>"mapStateToProps":</br> It connects redux state to props of react component;
+- <b>"mapDispatchToProps":</br> It connects redux actions to react props;

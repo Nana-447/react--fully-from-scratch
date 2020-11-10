@@ -1,6 +1,6 @@
 const INITIAL_STATE = {
     currentUser: null
-}
+};
 
 // This default state parameters only works if state is UNDEFINED
 // If state is NULL or ANY ANOTHER VALUE, the function will consider the value passed to the function as it should be
