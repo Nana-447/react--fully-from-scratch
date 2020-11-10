@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux'; // This is crucial for reducers to talk with themselves
 
 import './App.css';
@@ -50,16 +50,33 @@ class App extends React.Component {
         <Header/>
         <Switch> {/* Switch matches only one and nothing more after it. Unique router */}
           <Route exact path='/' component={HomePage} />
-          <Route exact path='/shop' component={ShopPage} />
-          <Route exact path='/signin' component={SignInAndSignUpPage} />
+          <Route path='/shop' component={ShopPage} />
+          <Route 
+            exact 
+            path='/signin' 
+            render={() => 
+              this.props.currentUser ? (
+                <Redirect to='/' />
+              ) : (
+                <SignInAndSignUpPage />
+              )
+            } 
+          />
         </Switch>
       </div>
     );
   }
 }
 
-const mapDispatchToProps = dispatch => ({
-  setCurrentUser: user => dispatch(setCurrentUser(user))
+const mapStateToPros = ({ user }) => ({
+  currentUser: user.currentUser // Connecting with the reducer
 });
 
-export default connect(null, mapDispatchToProps)(App);
+const mapDispatchToProps = dispatch => ({
+  setCurrentUser: user => dispatch(setCurrentUser(user)) // Connecting with the action
+});
+
+export default connect(
+  mapStateToPros, 
+  mapDispatchToProps
+)(App);
