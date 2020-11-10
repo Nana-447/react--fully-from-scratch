@@ -138,7 +138,7 @@ ReactDOM.render(
 - We need to use "mapmapDispatchToProps" to set a new value using the action throught the connect;
 - The only requirement that an "action.js" file needs to have, it's the type. For example: `` type: 'SET_CURRENT_USER' ``;
 - The reducer must have this type to recognize the action;
-- Check the commit calling a header [component here](), passing the logged user from the app;
+- Check the commit calling a header [component here](https://github.com/jvlessa/React--Zero-To-Mastery/commit/1c415739de7fdbca1647e1524fd6064c06f408c0), passing the logged user from the app;
 
 - <b>"mapStateToProps":</br> It connects redux state to props of react component;
 - <b>"mapDispatchToProps":</br> It connects redux actions to react props;
