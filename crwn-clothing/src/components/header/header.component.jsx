@@ -10,8 +10,9 @@ import { ReactComponent as Logo } from '../../assets/crown.svg';
 
 import './header.styles.scss';
 
-const Header = ({ currentUser }) => (
-    <div className='header'>
+// The parameters below read by the component have to be read from the reducers (mapStateToProps)
+const Header = ({ currentUser, hidden }) => (
+    <div className='header'> 
         <Link className='logo-container' to='/'>
             <Logo className='logo' />
         </Link>
@@ -37,15 +38,21 @@ const Header = ({ currentUser }) => (
             }
             <CartIcon />
         </div>
-        <CartDropdown />
+        {
+            hidden ? null :
+            <CartDropdown />
+        }
     </div>
 )
 
-// CurrentUser will be the argument passed as the prop
-// State is the root reducer
+// # mapStateToProps = Read values from the reducer
+
 // We want the currentUser from the state(rootReducer) >> user (userReducer) >> currentUser
-const mapStateToProps = state => ({
-    currentUser: state.user.currentUser
+// We want the hidden from the state(rootReducer) >> cart (cartReducer) >> hidden
+// We destructured the params
+const mapStateToProps = ({user: { currentUser }, cart: { hidden }}) => ({
+    currentUser,
+    hidden
 });
 
 export default connect(mapStateToProps)(Header);
