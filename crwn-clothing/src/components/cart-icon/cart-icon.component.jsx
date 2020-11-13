@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import { toggleCartHidden } from '../../redux/cart/cart.actions';
+import { selectCartItemsCount } from '../../redux/cart/cart.selectors';
 
 import { ReactComponent as ShoppingIcon } from '../../assets/shopping-bag.svg'; // Important SVG as a React Component
 
@@ -18,16 +19,9 @@ const CartIcon = ({ toggleCartHidden, itemCount }) => (
 // # mapStateToProps = Connects the state from reducers
 // It always will rerender our component
 // It works as a observable
-const mapStateToProps = ({ cart: {cartItems } }) => {
-    console.log("I'm being called");
-    return {
-        // Selector is getting an state and pour a little piece of it, manipulating it
-        itemCount: cartItems.reduce(
-            (accumulatedQuantity, cartItem) => accumulatedQuantity + cartItem.quantity, 
-            0
-        )
-    };
-};
+const mapStateToProps = state => ({
+    itemCount: selectCartItemsCount(state)
+});
 
 // # mapDispatchToProps = Connects actions to the reducer and changes values
 const mapDispatchToProps = dispatch => ({

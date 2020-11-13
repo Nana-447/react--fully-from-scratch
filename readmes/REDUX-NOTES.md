@@ -147,3 +147,7 @@ ReactDOM.render(
 
 ## SELECTORS IN REDUX
 - Selector is getting an state and pour a little piece of it, manipulating it;
+
+## MEMOIZATION FOR REDUX SELECTOR
+- Do not allow the component to reload if the state has the same value;
+- Add the library: `` yarn add reselect `` to the project;
