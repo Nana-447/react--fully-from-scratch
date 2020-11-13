@@ -144,3 +144,6 @@ ReactDOM.render(
     * <b>"mapDispatchToProps":</br> It connects redux actions to react props and changes values;
 
 * <b>Step 10:</b> Use a file to declared constant values for the actions types. [See commit here](https://github.com/jvlessa/React--Zero-To-Mastery/commit/7fff51f5f80fdc52f42a219dad27c447339d2051);
+
+## SELECTORS IN REDUX
+- Selector is getting an state and pour a little piece of it, manipulating it;
