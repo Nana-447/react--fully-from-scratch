@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 
 import { toggleCartHidden } from '../../redux/cart/cart.actions';
 import { selectCartItemsCount } from '../../redux/cart/cart.selectors';
@@ -19,9 +20,9 @@ const CartIcon = ({ toggleCartHidden, itemCount }) => (
 // # mapStateToProps = Connects the state from reducers
 // It always will rerender our component
 // It works as a observable
-const mapStateToProps = state => ({
-    itemCount: selectCartItemsCount(state)
-});
+const mapStateToProps = createStructuredSelector({
+    itemCount: selectCartItemsCount
+})
 
 // # mapDispatchToProps = Connects actions to the reducer and changes values
 const mapDispatchToProps = dispatch => ({

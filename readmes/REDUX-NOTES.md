@@ -148,6 +148,26 @@ ReactDOM.render(
 ## SELECTORS IN REDUX
 - Selector is getting an state and pour a little piece of it, manipulating it;
 
-## MEMOIZATION FOR REDUX SELECTOR
+### MEMOIZATION FOR REDUX SELECTOR
 - Do not allow the component to reload if the state has the same value;
 - Add the library: `` yarn add reselect `` to the project;
+
+### CREATING SELECTORS
+- First you have to import the createSelector function: ``import { createSelector } from 'reselect'``;
+- Then we go and tell what state would be prepared and store it on a const: ``const selectUser = state => state.user``;
+- Now we create the export default const using "createSelector" imported. First parameters are the const defined at the beginning. Second parameters is the function:
+
+```export const selectCurrentUser = createSelector(
+    [selectUser],
+    (user) => user.currentUser
+)```
+
+- We can call lots of selectors using "createStructuredSelector";
+- Instead of passing the (state) for each seletor, we instace them like this:
+
+```
+const mapStateToProps = createStructuredSelector({
+    currentUser: selectCurrentUser,
+    hidden: selectCartHidden
+})
+```

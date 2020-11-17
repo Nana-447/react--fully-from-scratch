@@ -1,6 +1,7 @@
 import CartActionTypes from './cart.types.js';
 import { addItemToCart } from './cart.utils';
 
+// These states will be used on rendering components and on selectors
 const INITIAL_STATE = {
     hidden: true,
     cartItems: []

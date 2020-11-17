@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux'; // This is crucial for reducers to talk with themselves
+import { createStructuredSelector } from 'reselect';
 
 import './App.css';
 
@@ -10,6 +11,7 @@ import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up
 import Header from './components/header/header.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions'; // Actions does not need to be linked with the reducer
+import { selectCurrentUser } from './redux/user/user.selector';
 
 // App.js converted to a Class Component
 class App extends React.Component {
@@ -68,8 +70,8 @@ class App extends React.Component {
   }
 }
 
-const mapStateToPros = ({ user }) => ({
-  currentUser: user.currentUser // Connecting with the reducer
+const mapStateToPros = createStructuredSelector({
+  currentUser: selectCurrentUser
 });
 
 const mapDispatchToProps = dispatch => ({

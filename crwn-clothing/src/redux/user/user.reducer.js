@@ -1,7 +1,8 @@
 import { UserActionTypes } from './user.types';
 
+// These states will be used on rendering components and on selectors
 const INITIAL_STATE = {
-    currentUser: null
+    currentUser: null 
 };
 
 // This default state parameters only works if state is UNDEFINED
