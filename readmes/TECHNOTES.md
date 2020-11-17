@@ -180,3 +180,15 @@ this.handleChange = this.handleChange.bind(this);``
 
 ## WITH ROUTER (REACT-ROUTER-DOM)
 - Superpower the components with the routes on a higher lever;
+
+## JAVASCRIPT EQUALS
+- == : compares the values converting, ignoring their types, (for example: "1" == 1 is true);
+- ===: compares the values matching their types too, (for example: "1" === 1 is false);
+
+## FALSE EQUIVALENTS IN JAVASCRIPT (==)
+- 0
+- false
+- undefined
+- null
+- NaN
+- ""
