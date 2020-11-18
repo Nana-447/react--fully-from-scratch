@@ -6,10 +6,11 @@ import { withRouter } from 'react-router-dom';
 import CustomButton from '../custom-button/custom-button.component';
 import CartItem from '../cart-item/cart-item.component';
 import { selectCartItems } from '../../redux/cart/cart.selectors';
+import { toggleCartHidden } from '../../redux/cart/cart.actions';
 
 import './cart-dropdown.styles.scss';
 
-const CartDropdown = ({ cartItems, history }) => ( // History coming from withRouter
+const CartDropdown = ({ cartItems, history, dispatch }) => ( // dispacth comes from mapDispatchToProps: we are not passing the second parameter to the "connect", so we can use this to call any function from reducers' actions
     <div className='cart-dropdown'>
         <div className='cart-items'>
             { 
@@ -21,7 +22,12 @@ const CartDropdown = ({ cartItems, history }) => ( // History coming from withRo
                 <span className='empty-message'>Your cart is empty!</span>
             }
         </div>
-        <CustomButton onClick={() => history.push('/checkout')}>GO TO CHECKOUT</CustomButton>
+        <CustomButton onClick={() => {
+            history.push('/checkout');
+            dispatch(toggleCartHidden()); // using dispatch to call functions from reducers' actions
+        }}>
+            GO TO CHECKOUT
+        </CustomButton>
     </div>
 )
 

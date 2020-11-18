@@ -141,7 +141,7 @@ ReactDOM.render(
     * [Check the commit calling a header component, and using mapmapDispatchToProps, here](https://github.com/jvlessa/React--Zero-To-Mastery/commit/1c415739de7fdbca1647e1524fd6064c06f408c0);
 
     * <b>"mapStateToProps":</br> It connects redux state to props of react component;
-    * <b>"mapDispatchToProps":</br> It connects redux actions to react props and changes values;
+    * <b>"mapDispatchToProps":</br> It connects redux actions to react props and changes values. We also can have it inside the component automatically if we do not pass the second parameter to the "connect". So, we are going to be able to make modifications in the state, only importing actions from reducers;
 
 * <b>Step 10:</b> Use a file to declared constant values for the actions types. [See commit here](https://github.com/jvlessa/React--Zero-To-Mastery/commit/7fff51f5f80fdc52f42a219dad27c447339d2051);
 
