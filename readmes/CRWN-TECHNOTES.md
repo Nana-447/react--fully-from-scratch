@@ -38,3 +38,20 @@
 ## FIREBASE IMPLEMENTATION:
 - [API Docs for Web](https://firebase.google.com/docs/auth/web/)
 - [Google Auth](https://firebase.google.com/docs/auth/web/google-signin)
+
+
+## LOCAL STORAGE X SESSION STORAGE
+- ``window.localStorage``: Persists through the local (we can close our window or browser);
+- ``window.sessionStorage``: Persists through the sessions (we can't close the window);
+
+- If the user ever refreshes the page, the cart of products would be lose all of its information, right?
+- Even the user would be lost, but the Firebase is storing it, so it's not getting lost;
+- But the other info, are!
+- Most of the shop websites have this problem;
+- We can save it into Firebase or on our <b>Local Storage</b>;
+
+### Commands for Storage
+- It can only store and return strings!!! So...
+- ``const myObjectToStore = {name: "Joao"}``
+- ``window.localStorage.setItem('myItem', JSON.stringify(myObjectToStore))``
+- ``const myRetrievedObject = JSON.parse(window.localStorage.getItem('myItem'))``
