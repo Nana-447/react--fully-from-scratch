@@ -28,7 +28,7 @@ const cartReducer = (state = INITIAL_STATE, action) => {
             return{
                 ...state,
                 cartItems: state.cartItems.filter( // filter gives us back a new array filtered
-                    cartItem => cartItem.id != action.payload.id // if the cartItem id is not equal to the cartItem.id from the payload, then it will keep it (because of the filter function)
+                    cartItem => cartItem.id !== action.payload.id // if the cartItem id is not equal to the cartItem.id from the payload, then it will keep it (because of the filter function)
                 )
             }
         default:

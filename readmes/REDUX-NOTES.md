@@ -176,5 +176,5 @@ const mapStateToProps = createStructuredSelector({
 
 ### PERSISTING DATA INTO REDUX APPS (AS LOCAL STORAGE AND SESSION STORAGE DOES, BUT USING A REACT / REDUX LIBRARY)
 - Add the library redux-persist: ``yarn add redux-persist``;
-- Check this commit to see the [full installation]();
+- Check this commit to see the [full installation](https://github.com/jvlessa/React--Zero-To-Mastery/commit/241a469f9c5f0ce0436e15d8e6590e38a426eb97);
 - After that, the reducers that we declare and config are going to be stored and persisted as we want;
