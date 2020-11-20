@@ -50,7 +50,7 @@
 
 2. Root Reducer: simple a pure function that receives an input and creates an ouput. The Output is the "State" or the "Store";
 
-3. Store: is the output. The entire state of the app;
+3. Store: is the output. The ENTIRE STATE of the app;
 
 4. DOM Changes: React makes changes to the view layer;
 
@@ -174,5 +174,7 @@ const mapStateToProps = createStructuredSelector({
 })
 ```
 
-### CREATING SELECTORS
+### PERSISTING DATA INTO REDUX APPS (AS LOCAL STORAGE AND SESSION STORAGE DOES, BUT USING A REACT / REDUX LIBRARY)
 - Add the library redux-persist: ``yarn add redux-persist``;
+- Check this commit to see the [full installation]();
+- After that, the reducers that we declare and config are going to be stored and persisted as we want;
