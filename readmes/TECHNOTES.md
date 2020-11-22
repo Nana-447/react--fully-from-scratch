@@ -192,3 +192,15 @@ this.handleChange = this.handleChange.bind(this);``
 - null
 - NaN
 - ""
+
+## CURRYING
+- Basically it works as isolation of functions;
+- Example:
+- ``const multiply = (a, b) => a*b;``
+- ``const curriedMultiply = (a) => (b) => a*b;``
+- ``const curriedMultiplyBy5 = curriedMultiply(5);``
+
+- Using curriedMultiplyBy5:
+- ``curriedMultiplyBy5(5)`` = 25;
+- ``curriedMultiplyBy5(4)`` = 20;
+- ``curriedMultiplyBy5(7)`` = 35;
