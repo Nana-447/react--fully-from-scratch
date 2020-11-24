@@ -204,3 +204,6 @@ this.handleChange = this.handleChange.bind(this);``
 - ``curriedMultiplyBy5(5)`` = 25;
 - ``curriedMultiplyBy5(4)`` = 20;
 - ``curriedMultiplyBy5(7)`` = 35;
+
+## HASH TABLES VS. ARRAY
+- Acess [this link to know more about this improvment of data structure](https://www.kirupa.com/html5/hashtables_vs_arrays.htm);
