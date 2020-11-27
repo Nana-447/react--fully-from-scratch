@@ -12,12 +12,13 @@
 9. Hit any button, then... the command line will open the browser to authenticate it;
 10. Log In using the browser and check if the command line accepted it;
 11. Heroku works similary as a GitHub repo. You pretty much have to commit code using GIT commands (but there are specific heroku commands);
-12. Create a Heroku Project: ``heroku create crwn-joaolessa --buildpack https://github.com/mars/create-react-app-buildpack.git`` (this will be available as: www.heroku.crwn-live.com);
-13. BuildPack is a specific configuration and deploys our React as a static website;
-14. Static website is the best way to host React Projects;
-15. We now need to push our chances to the master: ``git push heroku master``
-16. The BuildPack is building and optimizing our React Project;
-17. My project returned with an error: "App not compatible with buildpack" / The push failed;
+12. Enter the project folder via command line. This is IMPORTANT;
+13. Create a Heroku Project: ``heroku create crwn-joaolessa --buildpack https://github.com/mars/create-react-app-buildpack.git`` (this will be available as: www.heroku.crwn-live.com);
+14. BuildPack is a specific configuration and deploys our React as a static website;
+15. Static website is the best way to host React Projects;
+16. We now need to push our chances to the master: ``git push heroku master``
+17. The BuildPack is building and optimizing our React Project;
+18. My project returned with an error: "App not compatible with buildpack" / The push failed;
 
 ## EXTRA - FIREBASE WITH HEROKU
 1. Copy the Heroku URL (https://crwn-joaolessa.heroku.com/);
