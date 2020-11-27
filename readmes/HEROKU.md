@@ -19,6 +19,7 @@
 16. We now need to push our chances to the master: ``git push heroku master``
 17. The BuildPack is building and optimizing our React Project;
 18. My project returned with an error: "App not compatible with buildpack" / The push failed;
+19. Solution: it is not deploying because the repo has multiple projects and package.json is not over on the root;
 
 ## EXTRA - FIREBASE WITH HEROKU
 1. Copy the Heroku URL (https://crwn-joaolessa.heroku.com/);
