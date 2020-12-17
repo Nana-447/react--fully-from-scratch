@@ -1,11 +1,5 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-
-// Styled CSS for Styled Components (SHARING STYLES)
-const OptionsContainerStyles = css`
-    padding: 10px 15px;
-    cursor: pointer;
-`;
 
 // Styled Components
 export const HeaderContainer = styled.div`
@@ -33,10 +27,6 @@ export const OptionsContainer = styled.div`
 
 // Using Styled CSS for Styled Components
 export const OptionLink = styled(Link)`
-    ${OptionsContainerStyles}
-`;
-
-// Using Styled CSS for Styled Components
-export const OptionDiv = styled.div`
-    ${OptionsContainerStyles}
+    padding: 10px 15px;
+    cursor: pointer;
 `;

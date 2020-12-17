@@ -207,3 +207,10 @@ this.handleChange = this.handleChange.bind(this);``
 
 ## HASH TABLES VS. ARRAY
 - Acess [this link to know more about this improvment of data structure](https://www.kirupa.com/html5/hashtables_vs_arrays.htm);
+
+## REACT TRADEOFFS
+- There are lots of PROS and CONS to use each library or each extension;
+- When you do not like something as soon as you see it, it's because you don't know too much about it;
+- So make sure you know the PROS and CONS of each addition;
+- As the application grows, you need to add something or a library to help you take care of everything;
+- Good developers are good because they know how to analyze those tradeoffs and decide if it is worth ir or not;

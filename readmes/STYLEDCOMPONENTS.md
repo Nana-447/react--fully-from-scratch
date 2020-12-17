@@ -75,4 +75,30 @@ export const OptionsContainer = styled.div`
 
 ## { CSS } FOR STYLED COMPONENTS WHEN WE WANT TO SHARE STYLES
 - We can import:
-``import { css } from 'styled-components';``
+```
+import { css } from 'styled-components';
+
+// Styled CSS for Styled Components (SHARING STYLES)
+const OptionsContainerStyles = css`
+    padding: 10px 15px;
+    cursor: pointer;
+`;
+
+// Using Styled CSS for Styled Components
+export const OptionLink = styled(Link)`
+    ${OptionsContainerStyles}
+`;
+
+// Using Styled CSS for Styled Components
+export const OptionDiv = styled.div`
+    ${OptionsContainerStyles}
+`;
+```
+
+## SOMETHING EVEN EASIER THEN CSS STYLES BLOCKS
+- If we want only return different kind of components with the same CSS:
+``<Component as='div' />``
+
+- We are using the "AS" parameter;
+
+- AS parameter will ignore our styles.jsx and use the component that we are passing as the parameter "as='div'";
