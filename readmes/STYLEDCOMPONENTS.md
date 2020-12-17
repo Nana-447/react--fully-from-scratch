@@ -58,3 +58,21 @@ const Text = styled.div`
     border: ${({isActive}) => isActive ? '1px solid black' : '3px dotted green'}
 `;
 ```
+
+## USING ANOTHER KIND OF COMPONENT DELIVERY FROM A EXTERNAL LIBRARY OR A REACT LIBRARY (LINK FOR EXAMPLE)
+
+```
+import { Link } from 'react-router-dom';
+
+export const OptionsContainer = styled.div`
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+`;
+```
+
+## { CSS } FOR STYLED COMPONENTS WHEN WE WANT TO SHARE STYLES
+- We can import:
+``import { css } from 'styled-components';``
