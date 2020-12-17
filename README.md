@@ -24,6 +24,7 @@
 #### 8 - I have decided to write my notes about Redux here in a separated document. [Go check it](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/REDUX-NOTES.md)
 #### 9 - I have used Stripe Payments on this project. To check the documentation about it, [click here](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/STRIPE-PAYMENTS.md)
 #### 10 - Deploying to Heroku. Check the full instructions [here](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/HEROKU.md)
+#### 11 - Styled Components. [A ReadMe only for this here](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/STYLEDCOMPONENTS.md)
 
 ## How do I run your projects, João?
 
