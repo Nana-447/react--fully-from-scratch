@@ -134,3 +134,5 @@ const firestore = firebase.firestore();
 - This can be quickly fixed by navigating to the rules tab in the database of your firestore console;
 
 - If you do not see `` request.time < timestamp.date(year, month, day); `` on line 5, you don't need to worry about this. If you do, just remove it, and replace the `` : if `` with a `` ; `` on line 4;
+
+## FIREBASE ALLOWS OUR DOCUMENTS TO HAVE DIFFERENT PARAMETERS ON COLLECTIONS;

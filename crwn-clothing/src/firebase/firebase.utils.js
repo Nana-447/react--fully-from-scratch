@@ -46,9 +46,14 @@ export const createUserProfileDocument = async(userAuth, additionalData) => {
     }
 
     return userRef; // If we want to use the Doc Reference to use somewhere
-}
+};
 
 firebase.initializeApp(config);
+
+export const addCollectionAndDocuments = (collectionKey, objectsToAdd) => {
+    const collectionRef = firestore.collection(collectionKey);
+    console.log(collectionRef);
+}
 
 // We can use anywhere we want, calling them below:
 export const auth = firebase.auth();
