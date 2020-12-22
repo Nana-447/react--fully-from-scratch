@@ -86,35 +86,37 @@ const firestore = firebase.firestore();
 
 `` firestore.collection('/users/id099012092/cartItems') ``
 
-### QUERIES IN FIRESTORE FROM FIREBASE
+## QUERIES IN FIRESTORE FROM FIREBASE
 
-- Firestore returns 2 types of queries: References and Snapshots;
+- Firestore returns 2 types of objects: References and Snapshots;
 - Those queries can be either Documents' or Collections' versions (depends of your search);
 
 - QueryReference: "current" place in the database;
 
-### QUERY REFERENCE
+## QUERY REFERENCE
 
-- An object that represents the "current" place in the database;
+- An object that represents the "current" place in the database that we are querying;
 
 `` firestore.doc('/users:userid/'); ``
-
 `` firestore.collections('/users'); ``
 
 - Does not have the actual data of the collection or the document;
 - It instead has properties with details that tells us details about it;
 
-#### DOCUMENT REFERENCE
+### DOCUMENT REFERENCE
 
 - Performs CRUD methods: .set(), .get(), .update(), .delete();
-
 - We also can "add" documents to a collection using: 
 
 `` collection.add(); ``
-
 `` collectionRef.add({value: prop}); ``
 
 - We get the Snapshot running ".get()" from a Reference;
+
+### DOCUMENT SNAPSHOT
+
+- Allows us to check if the object .exists
+- We can also get the properties calling .data;
 
 ## FIREBASE ERROR OF READING / PERMISSIONS
 
