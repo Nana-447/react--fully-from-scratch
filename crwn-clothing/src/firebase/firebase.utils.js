@@ -20,7 +20,12 @@ export const createUserProfileDocument = async(userAuth, additionalData) => {
 
     // Query inside Firestore
     const userRef = firestore.doc(`users/${userAuth.uid}`); // Query Reference
-    const snapShot = await userRef.get(); // Get Snapshot of the Reference
+    const collectionRef = firestore.collection('users'); // Query Snapshot
+
+    const snapShot = await userRef.get(); // Get Snapshot of the Reference (Basically it reads the object data)
+    const collectionSnapshot = await collectionRef.get(); // Get Snapshot of the Query Snapshot
+
+    console.log({ collection: collectionSnapshot.docs.map(doc => doc.data()) }); // Logging each of our user objects
 
     if(!snapShot.exists){ // If there is no Snapshot, we are going to create one
         const { displayName, email } = userAuth;

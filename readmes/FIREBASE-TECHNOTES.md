@@ -113,6 +113,15 @@ const firestore = firebase.firestore();
 
 - We get the Snapshot running ".get()" from a Reference;
 
+## QUERY SNAPSHOT
+
+- Query Snapshot comes from our collectionReference object;
+`` firestore.collection('users'); ``
+
+- docs: Give us back an array of the documents inside of our collection;
+- empty: Similar to exists command, except tells us if our query is empty or not;
+- size: Tells us how many objects there are inside our collection;
+
 ### DOCUMENT SNAPSHOT
 
 - Allows us to check if the object .exists
