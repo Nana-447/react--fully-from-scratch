@@ -55,3 +55,6 @@
 - ``const myObjectToStore = {name: "Joao"}``
 - ``window.localStorage.setItem('myItem', JSON.stringify(myObjectToStore))``
 - ``const myRetrievedObject = JSON.parse(window.localStorage.getItem('myItem'))``
+
+### Our Database Schema (Collections, Data, etc)
+<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/crwn-store-shop-db.jpg">
