@@ -141,9 +141,15 @@ const firestore = firebase.firestore();
 
 ## BATCH RIGHT: WAY TO INTERRUPT ALL OUR CALLS IF ONE OF THEM DOES NOT WORK ANYMORE;
 - Batch [documentation](https://firebase.google.com/docs/firestore/manage-data/transactions)
-- Check this [commit]()
+- Check this [commit](https://github.com/jvlessa/React--Zero-To-Mastery/commit/dc1924d4e441c34ec4c18892b4619bcafe4bea2e);
 
-## ERROS AO INSERIR DADOS NO FIREBASE:
-- Acesse a URL correspondente do seu banco: https://console.firebase.google.com/u/0/project/crwn-db--lessa/firestore/rules;
+## ERROS TO INSERT DATA ON FIREBASE:
+- Access your firebase db URL rules: https://console.firebase.google.com/u/0/project/crwn-db--lessa/firestore/rules;
 
-- Edite o Rules Versions e aplique as alterações conforme imagens a seguir;
+- Edit the rules and apply the changes on them;
+
+- Change the permissions as the images below:
+
+<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/firebase-rules-1.png">
+<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/firebase-rules-2.png">
+<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/firebase-rules-3.png">
