@@ -50,9 +50,18 @@ export const createUserProfileDocument = async(userAuth, additionalData) => {
 
 firebase.initializeApp(config);
 
-export const addCollectionAndDocuments = (collectionKey, objectsToAdd) => {
+// Adding the SHOP Json to our firebase one time only
+export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
     const collectionRef = firestore.collection(collectionKey);
-    console.log(collectionRef);
+    const batch = firestore.batch();
+
+    // forEach is very similar to Map method... except that forEach does not return an array
+    objectsToAdd.forEach(obj =>{
+        const newDocRef = collectionRef.doc();
+        batch.set(newDocRef, obj);
+    });
+
+    return await batch.commit();
 }
 
 // We can use anywhere we want, calling them below:

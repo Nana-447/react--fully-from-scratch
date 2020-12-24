@@ -136,3 +136,14 @@ const firestore = firebase.firestore();
 - If you do not see `` request.time < timestamp.date(year, month, day); `` on line 5, you don't need to worry about this. If you do, just remove it, and replace the `` : if `` with a `` ; `` on line 4;
 
 ## FIREBASE ALLOWS OUR DOCUMENTS TO HAVE DIFFERENT PARAMETERS ON COLLECTIONS;
+
+## FIREBASE ONLY LET US USE 1 SET PER EACH CALL;
+
+## BATCH RIGHT: WAY TO INTERRUPT ALL OUR CALLS IF ONE OF THEM DOES NOT WORK ANYMORE;
+- Batch [documentation](https://firebase.google.com/docs/firestore/manage-data/transactions)
+- Check this [commit]()
+
+## ERROS AO INSERIR DADOS NO FIREBASE:
+- Acesse a URL correspondente do seu banco: https://console.firebase.google.com/u/0/project/crwn-db--lessa/firestore/rules;
+
+- Edite o Rules Versions e aplique as alterações conforme imagens a seguir;
