@@ -64,6 +64,22 @@ export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => 
     return await batch.commit();
 }
 
+// Getting the SHOP collections from firebase
+export const convertCollectionsSnapshotToMap = (collections) => {
+    const transformedCollection = collections.docs.map(doc => {
+        const {title, items} = doc.data();
+
+        return {
+            routeName: encodeURI(title.toLowerCase()),
+            id: doc.id,
+            title,
+            items
+        };
+    });
+
+    console.log(transformedCollection);
+}
+
 // We can use anywhere we want, calling them below:
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();

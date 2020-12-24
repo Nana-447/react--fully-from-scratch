@@ -29,7 +29,6 @@ class App extends React.Component {
     //const { setCurrentUser, collectionsArray } = this.props; // To avoid calling this.props every time, we desconstruct the function here
     const { setCurrentUser } = this.props; // To avoid calling this.props every time, we desconstruct the function here
 
-
     // Method from Firebase that tells the App when the user has some change
     // It works as a subscriber method that keeps listening to its changes    
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
