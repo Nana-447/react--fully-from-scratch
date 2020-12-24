@@ -12,11 +12,12 @@ import CheckoutPage from './pages/checkout/checkout.component';
 
 import Header from './components/header/header.component';
 
-import { auth, createUserProfileDocument, addCollectionAndDocuments } from './firebase/firebase.utils';
+//import { auth, createUserProfileDocument, addCollectionAndDocuments } from './firebase/firebase.utils';
+import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
 import { setCurrentUser } from './redux/user/user.actions'; // Actions does not need to be linked with the reducer
 import { selectCurrentUser } from './redux/user/user.selector';
-import { selectCollectionsForPreview } from './redux/shop/shop.selectors';
+//import { selectCollectionsForPreview } from './redux/shop/shop.selectors';
 
 // App.js converted to a Class Component
 class App extends React.Component {
@@ -25,7 +26,9 @@ class App extends React.Component {
 
   // On ComponentDidMount action, we are calling the user action. This user action will set the currentUser using redux
   componentDidMount(){
-    const { setCurrentUser, collectionsArray } = this.props; // To avoid calling this.props every time, we desconstruct the function here
+    //const { setCurrentUser, collectionsArray } = this.props; // To avoid calling this.props every time, we desconstruct the function here
+    const { setCurrentUser } = this.props; // To avoid calling this.props every time, we desconstruct the function here
+
 
     // Method from Firebase that tells the App when the user has some change
     // It works as a subscriber method that keeps listening to its changes    
@@ -43,10 +46,10 @@ class App extends React.Component {
       }
       // Calling action
       setCurrentUser(userAuth);
-      addCollectionAndDocuments(
+      /*addCollectionAndDocuments(
         'collections', 
         collectionsArray.map(({ title, items }) => ({ title, items }))
-      )
+      )*/
     });
   }
 
@@ -83,7 +86,7 @@ class App extends React.Component {
 // Reads Data
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
-  collectionsArray: selectCollectionsForPreview
+  //collectionsArray: selectCollectionsForPreview
 });
 
 // Manipulates Data
