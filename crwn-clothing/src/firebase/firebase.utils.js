@@ -77,7 +77,12 @@ export const convertCollectionsSnapshotToMap = (collections) => {
         };
     });
 
-    console.log(transformedCollection);
+    //console.log(transformedCollection);
+    // Basically this method SUMS UPP THE SHOP COLLECTIONS TITLES AND ACCUMULATE THEM
+    return transformedCollection.reduce((accumulator, collection) => {
+        accumulator[collection.title.toLowerCase()] = collection;
+        return accumulator;
+    }, {});
 }
 
 // We can use anywhere we want, calling them below:
