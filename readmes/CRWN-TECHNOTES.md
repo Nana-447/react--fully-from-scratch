@@ -59,5 +59,5 @@
 ### Our Database Schema (Collections, Data, etc)
 <img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/crwn-store-shop-db.jpg">
 
-### HOC Components
+### HOC (Higher Order Components) Components
 - Basically it is a component that receives another component and does it manipulations before giving it back;
