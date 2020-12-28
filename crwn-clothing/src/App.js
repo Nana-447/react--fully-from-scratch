@@ -16,7 +16,7 @@ import Header from './components/header/header.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
 import { setCurrentUser } from './redux/user/user.actions'; // Actions does not need to be linked with the reducer
-import { selectCurrentUser } from './redux/user/user.selector';
+import { selectCurrentUser } from './redux/user/user.selectors';
 //import { selectCollectionsForPreview } from './redux/shop/shop.selectors';
 
 // App.js converted to a Class Component

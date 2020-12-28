@@ -6,22 +6,17 @@ import { selectDirectorySections } from '../../redux/directory/directory.selecto
 
 import MenuItem from '../menu-item/menu-item.component';
 
-import './directory.styles.scss';
+import { DirectoryMenuContainer } from './directory.styles';
 
-const Directory = ({ sections }) =>  {// After connecting to the reducer, we do not have the need of using the state, so class component will be functional component  
-  console.log(sections);
-  return (  
-    <div className='directory-menu'>
-      {/*sections.map(({ title, imageUrl, id, size, linkUrl }) => (
-        <MenuItem key={id} title = {title} imageUrl = {imageUrl} size = {size} linkUrl = {linkUrl} />
-      ))*/}
+const Directory = ({ sections }) => (
+  <DirectoryMenuContainer>
+    {sections.map(({ id, ...otherSectionProps }) => (
+      <MenuItem key={id} {...otherSectionProps} />
+    ))}
+  </DirectoryMenuContainer>
+);
 
-      {sections.map(({ id, ...otherSectionProps }) => (
-        <MenuItem key={id} {...otherSectionProps} />
-      ))}
-    </div>
-  );
-}
+
 const mapStateToProps = createStructuredSelector({
   sections: selectDirectorySections
 });

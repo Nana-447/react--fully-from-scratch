@@ -6,48 +6,38 @@ import { auth } from '../../firebase/firebase.utils';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
-import { selectCurrentUser } from '../../redux/user/user.selector';
+import { selectCurrentUser } from '../../redux/user/user.selectors';
 
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 
-import { 
-    HeaderContainer, 
-    LogoContainer, 
-    OptionsContainer,
-    OptionLink 
+import {
+  HeaderContainer,
+  LogoContainer,
+  OptionsContainer,
+  OptionLink
 } from './header.styles';
 
 // The parameters below read by the component have to be read from the reducers (mapStateToProps)
 const Header = ({ currentUser, hidden }) => (
-    <HeaderContainer> 
-        <LogoContainer to='/'>
-            <Logo className='logo' />
-        </LogoContainer>
-
-        <OptionsContainer>
-            <OptionLink to='/shop'>
-                SHOP
-            </OptionLink>
-
-            <OptionLink to='/shop'>
-                CONTACT
-            </OptionLink>
-            {
-                currentUser ?
-                <OptionLink as='div' onClick={() => auth.signOut()}>
-                    SIGN OUT
-                </OptionLink>
-                :
-                <OptionLink to='/signin'>SIGN IN</OptionLink>
-            }
-            <CartIcon />
-        </OptionsContainer>
-        {
-            hidden ? null :
-            <CartDropdown />
-        }
-    </HeaderContainer>
-)
+  <HeaderContainer>
+    <LogoContainer to='/'>
+      <Logo className='logo' />
+    </LogoContainer>
+    <OptionsContainer>
+      <OptionLink to='/shop'>SHOP</OptionLink>
+      <OptionLink to='/shop'>CONTACT</OptionLink>
+      {currentUser ? (
+        <OptionLink as='div' onClick={() => auth.signOut()}>
+          SIGN OUT
+        </OptionLink>
+      ) : (
+        <OptionLink to='/signin'>SIGN IN</OptionLink>
+      )}
+      <CartIcon />
+    </OptionsContainer>
+    {hidden ? null : <CartDropdown />}
+  </HeaderContainer>
+);
 
 // # mapStateToProps = Read values from the reducer
 
@@ -55,8 +45,8 @@ const Header = ({ currentUser, hidden }) => (
 // We want the hidden from the state(rootReducer) >> cart (cartReducer) >> hidden
 // We destructured the params
 const mapStateToProps = createStructuredSelector({
-    currentUser: selectCurrentUser,
-    hidden: selectCartHidden
-})
+  currentUser: selectCurrentUser,
+  hidden: selectCartHidden
+});
 
 export default connect(mapStateToProps)(Header);
