@@ -32,8 +32,9 @@ class ShopPage extends React.Component {
         const { updateCollections } = this.props;
         const collectionRef = firestore.collection('collections');
 
-        // Reading directly from Firebase
-        this.unsubscribeFromSnapshot = collectionRef.onSnapshot(async snapshot => {
+        
+        // Reading directly from Firebase (NOW USING PROMISE EVENT AND OBSERVABLES)
+        collectionRef.get().then(snapshot => {
             const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
             //console.log(collectionsMap); // THIS VALUE WILL UPDATE OUR SHOP REDUCER
             updateCollections(collectionsMap);
