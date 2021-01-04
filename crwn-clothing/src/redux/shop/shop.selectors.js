@@ -20,4 +20,9 @@ export const selectCollection = collectioUrlParam => createSelector(
 export const selectIsCollectionFetching = createSelector(
   [selectShop],
   shop => shop.isFecthing
+);
+
+export const selectIsCollectionsLoaded = createSelector(
+  [selectShop],
+  shop => !!shop.collections
 )
