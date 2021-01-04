@@ -1,10 +1,11 @@
 import { createStore, applyMiddleware } from 'redux';
 import logger from 'redux-logger'; // Awesome for debugging our redux code
 import { persistStore } from 'redux-persist'; // It allows our browser to cache our app to store info
+import thunk from 'redux-thunk';
 
 import rootReducer from './root-reducer';
 
-const middlewares = [];
+const middlewares = [thunk];
 
 if (process.env.NODE_ENV === 'development'){ // INSIDE OF NODE, THERE IS A ENVIROMENT VARIABLE. It's already configured when we create a react app
     middlewares.push(logger);

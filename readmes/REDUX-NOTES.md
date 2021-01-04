@@ -178,3 +178,11 @@ const mapStateToProps = createStructuredSelector({
 - Add the library redux-persist: ``yarn add redux-persist``;
 - Check this commit to see the [full installation](https://github.com/jvlessa/React--Zero-To-Mastery/commit/241a469f9c5f0ce0436e15d8e6590e38a426eb97);
 - After that, the reducers that we declare and config are going to be stored and persisted as we want;
+
+### REDUX THUNK
+- Redux Thunk [API](https://www.npmjs.com/package/redux-thunk);
+- Our Shop Component is the only component that has the capability of loading our collections for the application;
+- The problem is: Our "loading" state is also attached to this function;
+- What if we need to reuse it?;
+- For it, we're going to use THUNK, so our action could be ASYNC;
+- If redux-thunk middleware is enabled, any time you attempt to "dispatch" a function instead of an object, the middleware will call that function with dispatch method itself as the first argument;
