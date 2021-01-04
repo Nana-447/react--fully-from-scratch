@@ -185,4 +185,7 @@ const mapStateToProps = createStructuredSelector({
 - The problem is: Our "loading" state is also attached to this function;
 - What if we need to reuse it?;
 - For it, we're going to use THUNK, so our action could be ASYNC;
-- If redux-thunk middleware is enabled, any time you attempt to "dispatch" a function instead of an object, the middleware will call that function with dispatch method itself as the first argument;
+- <b>If redux-thunk middleware is enabled, any time you attempt to <u>"dispatch"</u> a function instead of an object, the middleware will call that function with dispatch method itself as the first argument;</b>
+
+- REDUX FLOW WITH THUNK:
+<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/reduxThunk1.png" width=1200 />
