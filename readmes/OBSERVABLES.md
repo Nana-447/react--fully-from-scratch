@@ -16,3 +16,7 @@
 
 - FIREBASE STREAM: onAuthStateChanged;
 - OUR SUBSCRIPTION NEVER ENDS;
+
+## FIREBASE AS A NORMAL API
+- We have changed one of our requests to a native FETCH / PROMISE request. [Check this commit](https://github.com/jvlessa/React--Zero-To-Mastery/commit/8d0287b05d88ce19101d4fadcff34fb52f8f4109);
+- [Firebase API documentation](https://firebase.google.com/docs/firestore/use-rest-api#making_rest_calls);
