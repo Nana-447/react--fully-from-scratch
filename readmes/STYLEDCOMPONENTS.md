@@ -104,4 +104,3 @@ export const OptionDiv = styled.div`
 - AS parameter will ignore our styles.jsx and use the component that we are passing as the parameter "as='div'";
 
 ## IT ALSO WORKS WITH SASS
-

@@ -49,7 +49,7 @@ class App extends React.Component {
         'collections', 
         collectionsArray.map(({ title, items }) => ({ title, items }))
       )*/
-    });
+    }, error => console.log(error));
   }
 
   // Important to close Auth
