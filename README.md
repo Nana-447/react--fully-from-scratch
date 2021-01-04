@@ -21,11 +21,11 @@
 #### 5 - Check my [General's Technical Notes and Tips](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/TECHNOTES.md)
 #### 6 - Check all the [Technical Notes / Tips that I have used on my CRWN - Clothing Store Project](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/CRWN-TECHNOTES.md)
 #### 7 - FireBase as the Database for my CRWN - Clothing Store Project. [Click here to see each step](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/FIREBASE-TECHNOTES.md)
-#### 8 - Redux notes [here](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/REDUX-NOTES.md) in a separated document.
-#### 9 - Stripe Payments is on this project. [Click here to see more](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/STRIPE-PAYMENTS.md)
-#### 10 - Deploying to Heroku. Check the full instructions [here](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/HEROKU.md)
-#### 11 - Styled Components. [A ReadMe only for this here](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/STYLEDCOMPONENTS.md)
-#### 12 - Observables and Async Events. [A ReadMe explaning everything here](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/OBSERVABLES.md)
+#### 8 - [Redux notes here](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/REDUX-NOTES.md) in a separated document.
+#### 9 - [Stripe Payments notes here](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/STRIPE-PAYMENTS.md) - We have used this method to simulate the payment on the application;
+#### 10 - [Deploying to Heroku](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/HEROKU.md) instructions;
+#### 11 - [Styled Components](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/STYLEDCOMPONENTS.md)
+#### 12 - [Observables and Async Events](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/OBSERVABLES.md)
 
 ## How do I run your projects, João?
 
