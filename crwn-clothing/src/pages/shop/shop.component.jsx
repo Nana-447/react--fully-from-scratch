@@ -32,14 +32,17 @@ class ShopPage extends React.Component {
         const { updateCollections } = this.props;
         const collectionRef = firestore.collection('collections');
 
+        fetch('https://firestore.googleapis.com/v1/projects/crwn-db--lessa/databases/(default)/documents/collections')
+        .then(response => response.json())
+        .then(collections => console.log(collections));
         
         // Reading directly from Firebase (NOW USING PROMISE EVENT AND OBSERVABLES)
-        collectionRef.get().then(snapshot => {
+        /*collectionRef.get().then(snapshot => {
             const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
             //console.log(collectionsMap); // THIS VALUE WILL UPDATE OUR SHOP REDUCER
             updateCollections(collectionsMap);
             this.setState({loading: false});
-        });
+        });*/
     };
 
     render() {
