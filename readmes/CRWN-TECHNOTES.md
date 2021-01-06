@@ -61,3 +61,6 @@
 
 ### HOC (Higher Order Components) Components
 - Basically it is a component that receives another component and does it manipulations before giving it back;
+
+### CONTAINER PATTERN: WRAPPING 2 COMPONENTS
+- Check [this commit]()
