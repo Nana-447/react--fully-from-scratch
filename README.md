@@ -26,6 +26,7 @@
 #### 10 - [Deploying to Heroku](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/HEROKU.md) instructions;
 #### 11 - [Styled Components](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/STYLEDCOMPONENTS.md)
 #### 12 - [Observables and Async Events](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/OBSERVABLES.md)
+#### 13 - [Redux Saga](https://github.com/jvlessa/React--Zero-To-Mastery/blob/master/readmes/REDUX-SAGA.md)
 
 ## How do I run your projects, João?
 
