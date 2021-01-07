@@ -18,3 +18,34 @@
 
 - <b>Modified Application flow (After Saga) / Correction on the image below: Reducers fire first, then Sagas receive the action:</b>
 <img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/afterSagaFlow.jpg">
+
+## Generator Functions
+- They also pause the execution when they see a specific key inside the function;
+- This key is called "yield";
+
+```
+function* gen(){
+    console.log('a');
+    console.log('b');
+}
+
+const g = gen();
+```
+
+### Generator Object Created
+<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/sagaGeneratorFunc.jpg">
+
+- New function:
+
+```
+function* gen(i){
+    yield i;
+    yield i + 10;
+    return 25;
+}
+
+const gObj = gen(5);
+g.next();
+```
+
+- Sagas work on this Yield format;
