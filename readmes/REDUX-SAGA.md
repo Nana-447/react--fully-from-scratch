@@ -19,7 +19,7 @@
 - <b>Modified Application flow (After Saga) / Correction on the image below: Reducers fire first, then Sagas receive the action:</b>
 <img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/afterSagaFlow.jpg">
 
-## Generator Functions
+## GENERATOR FUNCTIONS
 - They also pause the execution when they see a specific key inside the function;
 - This key is called "yield";
 
@@ -32,7 +32,7 @@ function* gen(){
 const g = gen();
 ```
 
-### Generator Object Created
+## GENERATOR OBJECT CREATED
 <img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/sagaGeneratorFunc.jpg">
 
 - New function:
@@ -53,7 +53,7 @@ g.next();
 ## INSTALLATION
 ``yarn add redux-saga``
 
-## Saga Middleware
+## SAGA MIDDLEWARE
 - Runs our Sagas concurrently at the same time;
 - <b>Yield:</b> Sagas are implemented as Generator functions that yield objects to the redux-saga middleware. The yielded objects are a kind of instruction to be interpreted by the middleware. When a Promise is yielded to the middleware, the middleware will suspend the Saga until the Promise completes;
 - <b>Take Every:</b> does not pause our javascript waiting for anything inside before calls a new function;
