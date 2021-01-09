@@ -17,7 +17,8 @@
 ## ORIGINAL APPLICATION FLOW (BEFORE SAGA)
 <img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/beforeSagaFlow.jpg">
 
-## MODIFIED APPLICATION FLOW (AFTER SAGA): Correction on the image below: Reducers fire first, then Sagas receive the action
+## MODIFIED APPLICATION FLOW (AFTER SAGA): 
+<b>Correction on the image below: Reducers fire first, then Sagas receive the action</b>
 <img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/afterSagaFlow.jpg">
 
 ## GENERATOR FUNCTIONS
