@@ -18,13 +18,6 @@ export const fetchCollectionsFailure = errorMessage => ({
 
 export const fetchCollectionsStartAsync = () => {
     return dispatch => {
-        const collectionRef = firestore.collection('collections');
-        dispatch(fetchCollectionsStart()); // Triggering Start
-                
-        // Reading directly from Firebase (NOW USING PROMISE EVENT AND OBSERVABLES)
-        collectionRef.get().then(snapshot => {
-            const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
-            dispatch(fetchCollectionsSuccess(collectionsMap)); // Trigger Success
-        }).catch(error => dispatch(fetchCollectionsFailure(error))); // Trigger Failure
+        
     }
 }

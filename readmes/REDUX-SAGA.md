@@ -57,3 +57,5 @@ g.next();
 - Runs our Sagas concurrently at the same time;
 - <b>Yield:</b> Sagas are implemented as Generator functions that yield objects to the redux-saga middleware. The yielded objects are a kind of instruction to be interpreted by the middleware. When a Promise is yielded to the middleware, the middleware will suspend the Saga until the Promise completes;
 - <b>Take Every:</b> does not pause our javascript waiting for anything inside before calls a new function;
+- <b>Call:</b> is the effect inside of our generator function;
+- <b>Put:</b> effect to create actions;
