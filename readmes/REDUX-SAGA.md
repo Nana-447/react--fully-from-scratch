@@ -65,3 +65,8 @@ g.next();
 - <b>takeEvery:</b> Spawns a saga on each action dispatched to the Store that matches pattern. / does not pause our javascript waiting for anything inside before calls a new function;
 - <b>take</b>: Unlike takeEvery, it waits for the async to happen / Creates an Effect description that instructs the middleware to wait for a specified action on the Store. The Generator is suspended until an action that matches pattern is dispatche. We do not have to pass a second argument calling a new function;
 - <b>takeLatest</b>: Forks a saga on each action dispatched to the Store that matches pattern. And automatically cancels any previous saga task started previously if it's still running;
+- <b>all</b>: Takes an array of Sagas and executes them at the same time;
+
+## ROOT SAGA
+- We created a file on this [commit]() that handles all saga requests;
+- If we would not have created it, we would have to call sagaMiddleware.run all the time for each command;
