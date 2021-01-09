@@ -68,8 +68,8 @@ g.next();
 - <b>all</b>: Takes an array of Sagas and executes them at the same time;
 
 ## ROOT SAGA
-- We created a file on this [commit]() that handles all saga requests;
+- We created a file on this [commit](https://github.com/jvlessa/React--Zero-To-Mastery/commit/0fa7c7befc5a3c6a5acb5a80bff977e644b930cf) that handles all saga requests;
 - If we would not have created it, we would have to call sagaMiddleware.run all the time for each command;
 
 ## GOOGLE SIGN IN FROM FIREBASE USING SAGA
-- Refactor [here]();
+- Refactor [here](https://github.com/jvlessa/React--Zero-To-Mastery/commit/b0dc526dc032e9a42b47eea2d01275db31887b29);
