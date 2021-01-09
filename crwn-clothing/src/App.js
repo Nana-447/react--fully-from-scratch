@@ -28,9 +28,11 @@ class App extends React.Component {
   componentDidMount(){
     //const { setCurrentUser, collectionsArray } = this.props; // To avoid calling this.props every time, we desconstruct the function here
     const { setCurrentUser } = this.props; // To avoid calling this.props every time, we desconstruct the function here
-
-    // Method from Firebase that tells the App when the user has some change
-    // It works as a subscriber method that keeps listening to its changes    
+    
+    // ************* BEFORE REDUX SAGA ****************   
+    /*
+    //Method from Firebase that tells the App when the user has some change
+    //It works as a subscriber method that keeps listening to its changes    
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth){
         const userRef = await createUserProfileDocument(userAuth);
@@ -45,11 +47,11 @@ class App extends React.Component {
       }
       // Calling action
       setCurrentUser(userAuth);
-      /*addCollectionAndDocuments(
-        'collections', 
-        collectionsArray.map(({ title, items }) => ({ title, items }))
-      )*/
-    }, error => console.log(error));
+      //addCollectionAndDocuments(
+        //'collections', 
+        //collectionsArray.map(({ title, items }) => ({ title, items }))
+      //)
+    }, error => console.log(error));*/
   }
 
   // Important to close Auth

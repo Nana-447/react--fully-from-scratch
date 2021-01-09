@@ -60,7 +60,7 @@ g.next();
 - Runs our Sagas concurrently at the same time;
 - <b>Yield:</b> Sagas are implemented as Generator functions that yield objects to the redux-saga middleware. The yielded objects are a kind of instruction to be interpreted by the middleware. When a Promise is yielded to the middleware, the middleware will suspend the Saga until the Promise completes;
 - <b>call:</b> creates an Effect description that instructs the middleware to call the function fn with args as arguments;
-- <b>put:</b> Creates an Effect description that instructs the middleware to schedule the dispatching of an action to the store. This dispatch may not be immediate since other tasks might lie ahead in the saga task queue or still be in progress. / Effect to create actions;
+- <b>put:</b> Put things back to our Redux Flow / Creates an Effect description that instructs the middleware to schedule the dispatching of an action to the store. This dispatch may not be immediate since other tasks might lie ahead in the saga task queue or still be in progress. / Effect to create actions;
 - <b>delay</b>: setTimeout of Saga;
 - <b>takeEvery:</b> Spawns a saga on each action dispatched to the Store that matches pattern. / does not pause our javascript waiting for anything inside before calls a new function;
 - <b>take</b>: Unlike takeEvery, it waits for the async to happen / Creates an Effect description that instructs the middleware to wait for a specified action on the Store. The Generator is suspended until an action that matches pattern is dispatche. We do not have to pass a second argument calling a new function;
@@ -70,3 +70,6 @@ g.next();
 ## ROOT SAGA
 - We created a file on this [commit]() that handles all saga requests;
 - If we would not have created it, we would have to call sagaMiddleware.run all the time for each command;
+
+## GOOGLE SIGN IN FROM FIREBASE USING SAGA
+- Refactor [here]();
