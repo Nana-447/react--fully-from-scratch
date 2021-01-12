@@ -81,10 +81,7 @@ class App extends React.Component {
 
 // Reads Data
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser,
-  //collectionsArray: selectCollectionsForPreview
+  currentUser: selectCurrentUser
 });
 
-export default connect(
-  mapStateToProps
-)(App);
+export default connect(mapStateToProps)(App);
