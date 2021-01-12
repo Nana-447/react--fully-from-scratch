@@ -1,4 +1,5 @@
 # REDUX SAGA
+- API Calls Asyncs? Use Redux Saga;
 
 ## WHAT'S REDUX SAGA
 - [API and Docs](https://redux-saga.js.org/);
