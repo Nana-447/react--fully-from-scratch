@@ -12,14 +12,12 @@ const userReducer = (state = INITIAL_STATE, action) => {
 
     // Depending of the type of action
     switch (action.type){
-        case UserActionTypes.SIGN_IN_SUCCESS: // Same string of the user.action.js
         case UserActionTypes.SIGN_IN_SUCCESS:
             return {
                 ...state,
                 currentUser: action.payload,
                 error: null
             };
-        case UserActionTypes.SIGN_IN_FAILURE:
         case UserActionTypes.SIGN_IN_FAILURE:
             return {
                 ...state,
