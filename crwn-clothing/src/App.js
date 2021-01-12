@@ -12,10 +12,6 @@ import CheckoutPage from './pages/checkout/checkout.component';
 
 import Header from './components/header/header.component';
 
-//import { auth, createUserProfileDocument, addCollectionAndDocuments } from './firebase/firebase.utils';
-import { auth, createUserProfileDocument } from './firebase/firebase.utils';
-
-import { setCurrentUser } from './redux/user/user.actions'; // Actions does not need to be linked with the reducer
 import { selectCurrentUser } from './redux/user/user.selectors';
 //import { selectCollectionsForPreview } from './redux/shop/shop.selectors';
 
@@ -27,8 +23,7 @@ class App extends React.Component {
   // On ComponentDidMount action, we are calling the user action. This user action will set the currentUser using redux
   componentDidMount(){
     //const { setCurrentUser, collectionsArray } = this.props; // To avoid calling this.props every time, we desconstruct the function here
-    const { setCurrentUser } = this.props; // To avoid calling this.props every time, we desconstruct the function here
-    
+
     // ************* BEFORE REDUX SAGA ****************   
     /*
     //Method from Firebase that tells the App when the user has some change
@@ -90,12 +85,6 @@ const mapStateToProps = createStructuredSelector({
   //collectionsArray: selectCollectionsForPreview
 });
 
-// Manipulates Data
-const mapDispatchToProps = dispatch => ({
-  setCurrentUser: user => dispatch(setCurrentUser(user)) // Connecting with the action
-});
-
 export default connect(
-  mapStateToProps, 
-  mapDispatchToProps
+  mapStateToProps
 )(App);
