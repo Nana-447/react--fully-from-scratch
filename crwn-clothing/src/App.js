@@ -13,6 +13,9 @@ import CheckoutPage from './pages/checkout/checkout.component';
 import Header from './components/header/header.component';
 
 import { selectCurrentUser } from './redux/user/user.selectors';
+import { checkUserSession } from './redux/user/user.actions';
+import checkoutComponent from './pages/checkout/checkout.component';
+
 //import { selectCollectionsForPreview } from './redux/shop/shop.selectors';
 
 // App.js converted to a Class Component
@@ -22,31 +25,8 @@ class App extends React.Component {
 
   // On ComponentDidMount action, we are calling the user action. This user action will set the currentUser using redux
   componentDidMount(){
-    //const { setCurrentUser, collectionsArray } = this.props; // To avoid calling this.props every time, we desconstruct the function here
-
-    // ************* BEFORE REDUX SAGA ****************   
-    /*
-    //Method from Firebase that tells the App when the user has some change
-    //It works as a subscriber method that keeps listening to its changes    
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
-      if (userAuth){
-        const userRef = await createUserProfileDocument(userAuth);
-
-        userRef.onSnapshot(snapshot => {
-          // Calling action
-          setCurrentUser({
-            id: snapshot.id,
-            ...snapshot.data()
-          });
-        });
-      }
-      // Calling action
-      setCurrentUser(userAuth);
-      //addCollectionAndDocuments(
-        //'collections', 
-        //collectionsArray.map(({ title, items }) => ({ title, items }))
-      //)
-    }, error => console.log(error));*/
+    const { checkUserSession } = this.props;
+    checkUserSession();
   }
 
   // Important to close Auth
@@ -84,4 +64,11 @@ const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser
 });
 
-export default connect(mapStateToProps)(App);
+const mapDispatchToProps = dispatch => ({
+  checkUserSession: () => dispatch(checkUserSession())
+})
+
+export default connect(
+  mapStateToProps, 
+  mapDispatchToProps
+)(App);

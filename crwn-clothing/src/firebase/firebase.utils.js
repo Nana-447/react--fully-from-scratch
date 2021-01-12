@@ -85,6 +85,16 @@ export const convertCollectionsSnapshotToMap = (collections) => {
     }, {});
 }
 
+export const getCurrentUser = () => {
+    return new Promise((resolve, reject) => {
+        // Firebase method
+        const unsubscribe = auth.onAuthStateChanged(userAuth => {
+            unsubscribe();
+            resolve(userAuth);
+        }, reject);
+    })
+}
+
 // We can use anywhere we want, calling them below:
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
