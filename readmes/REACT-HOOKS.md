@@ -93,3 +93,5 @@ useEffect(() => {
     fetchFunc();
 }, [searchQuery]); // If we forget this empty array (or a condition), it will be calling the function forever and our app will crash
 ```
+
+- <b>WE CANNOT CALL AN "useEffect" inside of a condition. The condition has to be INSIDE the "useEffect"!</b>
