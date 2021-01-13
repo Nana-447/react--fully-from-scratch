@@ -29,7 +29,7 @@ c = 3
 - What we pass inside "useState(HERE)" will be our value of setState:
 
 ```
-const [name, setName] = userState();
+const [name, setName] = useState();
 ```
 
 - Then we call the function:
@@ -49,3 +49,47 @@ this.state = {
 ```
 
 - The only main difference is that now we have a functional component that has this function;
+
+## USE EFFECT (ALMOST SAME THING OF COMPONENT DID MOUNT WITH ONE MORE THING)
+``import { useEffect } from 'react'``
+
+- Use effect does not get back any value;
+- Instead it gets back a function that is called whenever the component changes or rerenders;
+- <b>Whenever a parameters is called via useState, it updates the application and gets into the function</b>;
+- <b>Simulates the "componentDidMount" but also when we change any value</b>;
+
+- <b>Using Effect</b>;
+```
+useEffect(() => {
+    debugger
+});
+```
+
+- <b>The second parameter is optional, it's an array and we have to pass values ONLY THAT WE WANT to rerender / watch</b>;
+- It will only fires when "searchQuery" changes (in this case, for example);
+```
+useEffect(() => {
+   debugger 
+}, [searchQuery]);
+```
+
+- <b>USING FETCH (ASYNC AWAIT)</b>
+- <b>BE CAREFUL OF GETTING ETERNAL LOOPING ((TO AVOID THIS, WE PASS OUR EMPTY ARRAY AT THE END OF THE USEEFFECT()))</b>
+```
+const [user, setUser] = useState(null);
+const [searchQuery, setSearchQuery] = useState(null);
+
+useEffect(() => {
+    // A function that will be called on componentDidMount
+    const fetchFunction = async () => {
+        const response = await fetch('URL');
+        const resJosn = await response.json();
+        // Calling the useState and changing its value
+        // This will be a infinite looping if we do not take care of this
+        setUser(resJson[0]);
+    }
+
+    //Just calling the async function that we just created above
+    fetchFunc();
+}, [searchQuery]); // If we forget this empty array (or a condition), it will be calling the function forever and our app will crash
+```
