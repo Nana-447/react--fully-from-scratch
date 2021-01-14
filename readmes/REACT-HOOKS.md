@@ -50,7 +50,7 @@ this.state = {
 
 - The only main difference is that now we have a functional component that has this function;
 
-## USE EFFECT (ALMOST SAME THING OF COMPONENT DID MOUNT WITH ONE MORE THING)
+## USE EFFECT (ALMOST SAME THING OF COMPONENT DID MOUNT WITH ONE MORE THING - CALL IT A LISTENER)
 ``import { useEffect } from 'react'``
 
 - Use effect does not get back any value;
@@ -147,4 +147,58 @@ componentWillReceiveProps(nextProps) {
 useEffect(() => {
     console.log('count changed', props.count);
 }, [props.count])
+```
+
+## CUSTOM HOOKS
+- <b>Transform this</b>:
+```
+const [post, setPost] = useState(null);
+useEffect(() => {
+    const fetchUser = async() => {
+        const res = await fetch(
+            'URL'
+        );
+        const users = await res.json();
+        setUser(users[0]);
+    };
+
+    fetchUser();
+};
+```
+
+- <b>To this</b>:
+1. Create a file called: "use-fetch.effect.js";
+2. Then write the custom effect:
+```
+import { useState, useEffect } from 'react';
+
+const useFetch = (url) => {
+    const [data, setData] = useState(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const res = await fetch(url);
+
+            const dataArray = await res.json();
+            setData(dataArray[0]);
+        };
+
+        fetchData();
+    });
+    return data;
+};
+
+export default useFetch;
+```
+
+3. Bring this custom effect to your component;
+```
+import useEffect from '..directory/use-fetch.effect';
+
+const componentName = () => {
+    // Call it here
+    const user = useFetch('URL');
+
+    return (...)
+};
 ```
