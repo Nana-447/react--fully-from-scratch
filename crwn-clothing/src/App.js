@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux'; // This is crucial for reducers to talk with themselves
 import { createStructuredSelector } from 'reselect';
@@ -14,49 +14,37 @@ import Header from './components/header/header.component';
 
 import { selectCurrentUser } from './redux/user/user.selectors';
 import { checkUserSession } from './redux/user/user.actions';
-import checkoutComponent from './pages/checkout/checkout.component';
 
-//import { selectCollectionsForPreview } from './redux/shop/shop.selectors';
-
-// App.js converted to a Class Component
-class App extends React.Component {
-  // Important to close Auth
-  unsubscribeFromAuth = null
-
-  // On ComponentDidMount action, we are calling the user action. This user action will set the currentUser using redux
-  componentDidMount(){
-    const { checkUserSession } = this.props;
+// Functional Component
+const App = ({ checkUserSession, currentUser }) => {
+  // Replaced the componentDidMount here
+  useEffect(() => {
     checkUserSession();
-  }
+  }, [checkUserSession]); // checkUserSession is a property function that is passed from mapStateToProps
 
-  // Important to close Auth
-  componentWillUnmount(){
-    this.unsubscribeFromAuth();
-  }
-
-  render(){
-    return (
-      <div>
-        <Header/>
-        <Switch> {/* Switch matches only one and nothing more after it. Unique router */}
-          <Route exact path='/' component={HomePage} />
-          <Route path='/shop' component={ShopPage} />
-          <Route exact path='/checkout' component={CheckoutPage} />
-          <Route 
-            exact 
-            path='/signin' 
-            render={() => 
-              this.props.currentUser ? (
-                <Redirect to='/' />
-              ) : (
-                <SignInAndSignUpPage />
-              )
-            } 
-          />
-        </Switch>
-      </div>
-    );
-  }
+  return (
+    <div>
+      <Header/>
+      <Switch> {/* Switch matches only one and nothing more after it. Unique router */}
+        <Route exact path='/' component={HomePage} />
+        <Route path='/shop' component={ShopPage} />
+        <Route exact path='/checkout' component={CheckoutPage} />
+        <Route 
+          exact 
+          path='/signin' 
+          render={() => 
+            currentUser ? 
+            (
+              <Redirect to='/' />
+            ) : 
+            (
+              <SignInAndSignUpPage />
+            )
+          } 
+        />
+      </Switch>
+    </div>
+  );
 }
 
 // Reads Data
