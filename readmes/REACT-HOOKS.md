@@ -95,3 +95,14 @@ useEffect(() => {
 ```
 
 - <b>WE CANNOT CALL AN "useEffect" inside of a condition. The condition has to be INSIDE the "useEffect"!</b>
+
+### USE EFFECT (FOR COMPONENT WILL UNMOUNT)
+```
+useEffect(() => {
+
+    // Component Will Unmount HERE
+    return () => {
+        debugger
+    }
+});
+```
