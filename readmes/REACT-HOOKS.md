@@ -258,3 +258,14 @@ const useReducerExample = () => {
     )
 }
 ```
+
+## SHOULD YOU ADOPT HOOKS?
+- Here are a new addition from React 16.8;
+- They let you use state and other React feature without writing a class;
+- You can study every new piece of technology that appears on the Marketing;
+- But sometimes you don't need to migrate everything to Hooks, because we would delay an application that is already create;
+- Why would you migrate a class component that is already this doing good, to hooks? Maybe you will lose a lot of time;
+- [Complete guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/);
+- It's not so simple to migrate;
+- Very high cost and time. Sometimes employees does not want to pay for it;
+- There is no reason to really use Hooks;
