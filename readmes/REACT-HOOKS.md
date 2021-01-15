@@ -150,6 +150,9 @@ useEffect(() => {
 ```
 
 ## CUSTOM HOOKS
+- <b>WHY:</b>;
+- <b>WHEN:</b>;
+
 - <b>Transform this</b>:
 ```
 const [post, setPost] = useState(null);
@@ -201,4 +204,57 @@ const componentName = () => {
 
     return (...)
 };
+```
+
+## USE REDUCER
+- It's greater than useState() in some cases;
+- We are going to switch the line below to a useReducer implementation;
+```
+const [user, setUser] = useState(null);
+```
+
+- To this:
+```
+import { useReducer } from 'react';
+
+const INITIAL_STATE = {
+    user: null,
+    searchQuery: 'Bret'
+}
+
+const reducer = (state, action) => {
+    switch(action.type){
+        case 'SET_USER':
+            return {...state, user: action.payload}
+        case 'SET_SEARCH_QUERY':
+            return {...state, searchQuery: action.payload}
+        default:
+            return state;
+    }
+};
+
+const setUser = user => ({
+    type: 'SET_USER',
+    payload: user
+});
+
+const setSearchQuery = queryString => ({
+    type: 'SET_SEARCH_QUERY',
+    payload: queryString
+});
+
+const useReducerExample = () => {
+    const [state, dispatch] = userReducer(reducer, INITIAL_STATE);
+    const { user, searchQuery } = state;
+
+    ...
+    dispatch(setUser(resJson[0]));
+
+    ...
+    return (
+        <input 
+            onChange={event => dispatch(setSearchQuery(event.target.value))}
+        />
+    )
+}
 ```
