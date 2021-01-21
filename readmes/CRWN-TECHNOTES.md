@@ -64,3 +64,8 @@
 
 ### CONTAINER PATTERN: WRAPPING 2 COMPONENTS
 - Check [this commit](https://github.com/jvlessa/React--Zero-To-Mastery/commit/4fd03555019b8c30c13a1bb22b2b107940e82d44)
+
+## RUNNING BOTH PROJECTS (FRONTEND AND BACKEND) ON ROOT FOLDER
+``yarn dev`` OR ``npm run dev``
+
+## CHECKING IF EVERYTHING'S RIGHT
