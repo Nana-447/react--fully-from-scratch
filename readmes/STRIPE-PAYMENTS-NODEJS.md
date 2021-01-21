@@ -30,7 +30,7 @@ https://dashboard.stripe.com/register
 - So we would need to this API Key on the BackEnd;
 - We are going to hide the Secret Key on the BackEnd;
 
-### NODE.JS: We're going to write this BackEnd using Node.JS;
+## NODE.JS: We're going to write this BackEnd using Node.JS;
 - Basically Node.JS is a way of using JavaScript on the BackEnd;
 - Node JS [official docs](https://nodejs.org/pt-br/docs/)
 
@@ -39,3 +39,7 @@ https://dashboard.stripe.com/register
 
 - Our .env file is added to the .gitignore file, so it will never be commited;
 - Or else, <b>secretkey was added to .gitignore</b>;
+
+## PAYMENT FLOW
+<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/paymentFlow
+.jpg">
