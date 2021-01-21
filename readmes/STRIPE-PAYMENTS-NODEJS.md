@@ -34,4 +34,5 @@ https://dashboard.stripe.com/register
 - Basically Node.JS is a way of using JavaScript on the BackEnd;
 - Node JS [official docs](https://nodejs.org/pt-br/docs/)
 
-3. 
+- Create your node API files;
+- Copy the secret key API from Strapi and paste on a file called ".env" at the root folder;
