@@ -34,7 +34,11 @@
 #### For running "CRWN-Clothing" App:
   - Access the directory folder (crwn-clothing);
   - Run `npm install`;
-  - Run `npm start`;
+  - Enter the "client" repository (crwn-clothing/client)
+  - Run `npm install`;
+  - Go back to root project directory (crwn-clothing);
+  - Run `npm run dev`;
+  - Backend and frontend will run;
   
 #### For running "Monsters-Rolodex" App:
   - Access the directory folder (monster-rolodex);
