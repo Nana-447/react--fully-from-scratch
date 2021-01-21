@@ -36,3 +36,6 @@ https://dashboard.stripe.com/register
 
 - Create your node API files;
 - Copy the secret key API from Strapi and paste on a file called ".env" at the root folder;
+
+- Our .env file is added to the .gitignore file, so it will never be commited;
+- Or else, <b>secretkey was added to .gitignore</b>;
