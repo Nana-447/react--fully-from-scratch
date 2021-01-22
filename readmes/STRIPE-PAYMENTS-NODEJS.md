@@ -43,3 +43,7 @@ https://dashboard.stripe.com/register
 ## PAYMENT FLOW
 <img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/paymentFlow
 .jpg">
+
+## AFTER PAYMENT
+- Access this URL to check:
+https://dashboard.stripe.com/test/payments?status%5B%5D=successful
