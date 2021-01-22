@@ -9,5 +9,6 @@
 4. Change the option to "onlyWithFlag";
 5. Then, open your Node.JS project (in this repository, we're going to try it on: "crwn-clothing");
 6. Open the terminal and type: ``node --inspect [NOMEDOARQUIVO]``;
-7. Aguarde o terminal ficar laranja, conforme imagem a seguir:
+7. Wait the terminal to get orange, like the image below:
 <img width="300" src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/inspectNode.png">
+8. Put the breakpoints where you want and then start debugging;
