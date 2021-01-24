@@ -4,6 +4,7 @@
 - Basically, instead of using Redux, we're going to use ContextAPI;
 - To run it, just enter the director folder and type: ``yarn start``;
 - A context API file can be seen as a "reducer";
+- If we create a component, it has to be a jsx. If it's just a context, it does not have to be;
 
 ## BUILDING A CONTEXT API STRUCTURE
 ### CONSUMING DATA USING CONTEXT API
