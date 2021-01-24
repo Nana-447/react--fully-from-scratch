@@ -1,4 +1,4 @@
-## HOW TO DEBUG MY NODE.JS BACKEND APPLICATION (SERVER / API)
+# HOW TO DEBUG MY NODE.JS BACKEND APPLICATION (SERVER / API)
 
 - We are going to teach you here, how to debug the Node.JS application using <b>VS Code and Google Chrome</b>;
 
