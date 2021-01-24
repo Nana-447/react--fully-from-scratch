@@ -26,4 +26,4 @@
 3. Converte the return of your component to render and its functions;
 4. Work to bring the value;
 5. Spread the value to the Provider;
-6. Check this commit for [details]();
+6. Check this commit for [details](https://github.com/jvlessa/React--Zero-To-Mastery/commit/57eb647b4cf14427fb8ad5c41c218712e5e6ecc8);
