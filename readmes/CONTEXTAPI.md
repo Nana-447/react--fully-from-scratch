@@ -28,3 +28,10 @@
 4. Work to bring the value;
 5. Spread the value to the Provider;
 6. Check this commit for [details](https://github.com/jvlessa/React--Zero-To-Mastery/commit/57eb647b4cf14427fb8ad5c41c218712e5e6ecc8);
+
+## REDUX VS CONTEXT API
+- We lose SAGA;
+- We lose reusable patterns;
+- ContextAPI gets our application too much verbose if we start to scale everything;
+- Best Usecase for Context API (landing page, etc): small apps;
+- Best Use Case for Redux: large apps;
