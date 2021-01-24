@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import { withRouter } from 'react-router-dom';
 
 import CustomButton from '../custom-button/custom-button.component';
@@ -30,7 +30,7 @@ const CartDropdown = ({ history }) => {
         GO TO CHECKOUT
       </CustomButton>
     </div>
-  )
+  );
 };
 
-export default withRouter(CartDropdown); 
+export default withRouter(CartDropdown);

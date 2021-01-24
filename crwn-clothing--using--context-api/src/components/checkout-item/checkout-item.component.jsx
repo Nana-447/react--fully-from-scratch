@@ -1,7 +1,4 @@
 import React, { useContext } from 'react';
-import { connect } from 'react-redux';
-
-import { clearItemFromCart } from '../../redux/cart/cart.actions';
 
 import { CartContext } from '../../providers/cart/cart.provider';
 
@@ -27,18 +24,14 @@ const CheckoutItem = ({ cartItem }) => {
         </div>
       </span>
       <span className='price'>{price}</span>
-      <div className='remove-button' onClick={() => clearItemFromCart(cartItem)}>
+      <div
+        className='remove-button'
+        onClick={() => clearItemFromCart(cartItem)}
+      >
         &#10005;
       </div>
     </div>
   );
 };
 
-const mapDispatchToProps = dispatch => ({
-  clearItem: item => dispatch(clearItemFromCart(item))
-});
-
-export default connect(
-  null,
-  mapDispatchToProps
-)(CheckoutItem);
+export default CheckoutItem;
