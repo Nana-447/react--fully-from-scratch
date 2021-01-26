@@ -9,3 +9,6 @@
 <img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/afterGraphQL.png" width=1200 />
 
 - Basically it converts multiple endpoints into only one or how much you want, filtering information, deleting info that you do not want to see, etc;
+
+## GRAPHQL PLAYGROUND
+<img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/graphQLPlayground.png" width=1200 />
