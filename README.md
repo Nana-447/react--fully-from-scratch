@@ -34,7 +34,7 @@
 
 ## HOW DO I RUN YOUR PROJECTS, JOÃO?
 
-#### For running "CRWN-Clothing" App:
+#### For running "CRWN-Clothing" App (with Redux, Redux Saga, etc):
   - Access the directory folder (crwn-clothing);
   - Run `npm install`;
   - Enter the "client" repository (crwn-clothing/client)
