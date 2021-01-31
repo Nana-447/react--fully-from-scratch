@@ -18,8 +18,9 @@
 <img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/secondExampleOfQuery.png" width=1200 />
 
 ## APOLO
-- Apollo for React [Docs](https://www.apollographql.com/docs/react/)
+- What it is: Apollo Client is a comprehensive state management library for JavaScript that enables you to manage both local and remote data with GraphQL. Use it to fetch, cache, and modify application data, all while automatically updating your UI;
+
+- Apollo for React [Docs](https://www.apollographql.com/docs/react/);
+
 - Adding libraries to our React Project with GraphQL:
-```
-yarn add apollo-boost react-apollo graphql
-```
+``yarn add apollo-boost react-apollo graphql``
