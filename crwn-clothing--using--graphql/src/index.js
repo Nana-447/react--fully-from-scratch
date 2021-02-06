@@ -13,6 +13,8 @@ import { store, persistor } from './redux/store';
 import './index.css';
 import App from './App';
 
+import { resolvers, typeDefs } from '../../crwn-clothing--using--graphql/src/graphql/resolvers';
+
 const httpLink = createHttpLink({
   uri: 'https://crwn-clothing.com'
 });
@@ -20,8 +22,16 @@ const httpLink = createHttpLink({
 const cache = new InMemoryCache();
 const client = new ApolloClient({
   link: httpLink,
-  cache
+  cache,
+  typeDefs,
+  resolvers 
 });
+
+client.writeData({
+  data: {
+    cartHidden: true
+  }
+}); 
 
 // Building Playground Query
 client.query({

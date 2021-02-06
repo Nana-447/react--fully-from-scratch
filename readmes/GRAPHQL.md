@@ -37,3 +37,8 @@
 
 - <b>Apollo Flow</b>:
 <img src="https://raw.githubusercontent.com/jvlessa/React--Zero-To-Mastery/master/readmes/media/GraphQLVsReduxFlow.png" width=1200 />
+
+### APOLO EXTRAS 
+- [Resolvers](https://www.apollographql.com/docs/apollo-server/data/resolvers/)
+- [Configuring Cache](https://www.apollographql.com/docs/react/caching/cache-configuration/)
+- [Mutations](https://www.apollographql.com/docs/react/data/mutations/)
