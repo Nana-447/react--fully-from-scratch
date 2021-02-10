@@ -24,14 +24,14 @@ const client = new ApolloClient({
   link: httpLink,
   cache,
   typeDefs,
-  resolvers 
+  resolvers
 });
 
 client.writeData({
   data: {
     cartHidden: true
   }
-}); 
+});
 
 // Building Playground Query
 client.query({
