@@ -6,7 +6,7 @@ import CartIcon from './cart-icon.component';
 
 const TOGGLE_CART_HIDDEN = gql`
     mutation ToogleCartHidden {
-        ToogleCartHidden @client
+        toogleCartHidden @client
     }
 `;
 
